@@ -1,12 +1,8 @@
 {
   programs.git = {
     enable = true;
-    userName = "FaustXVI";
-    userEmail = "xavier.detant@gmail.com";
-    signing = {
-      signByDefault = true;
-      key = "98AC52834768871837C022716E983A14A5221EE1";
-    };
+    userName = "Aurélien Mino";
+    userEmail = "aurelien.mino@gmail.com";
     aliases = {
       co = "checkout";
       ci = "commit";
