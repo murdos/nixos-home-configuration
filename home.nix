@@ -17,7 +17,6 @@ with pkgs; {
     slack
     xpdf
     vlc
-    emacs
     feh
     simplescreenrecorder
     gimp
