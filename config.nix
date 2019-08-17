@@ -1,7 +1,7 @@
 {
-    allowUnfree = true;
-    firefox = {
-      enableGoogleTalkPlugin = true;
-      enableAdobeFlash = true;
-    };
+  allowUnfree = true;
+  firefox = {
+    enableGoogleTalkPlugin = true;
+    enableAdobeFlash = true;
+  };
 }

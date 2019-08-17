@@ -1,8 +1,8 @@
 {
-    programs = {
-        bash = {
-            enable = true;
-            bashrcExtra = ''
+  programs = {
+    bash = {
+      enable = true;
+      bashrcExtra = ''
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
@@ -28,7 +28,7 @@ if [ -f ~/.bashrc_for_profile ]; then
 fi
 
 eval "$(direnv hook bash)"
-            '';
-        };
+      '';
     };
+  };
 }
