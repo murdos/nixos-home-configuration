@@ -11,7 +11,6 @@ with pkgs; {
     jetbrains.idea-ultimate
     nix-index
     rlwrap
-    discord
     spotify
     slack
     xpdf
@@ -26,6 +25,15 @@ with pkgs; {
     patchelf
     autoPatchelfHook
     srm
+    vscode-with-extensions
+    arc-theme
+    arc-icon-theme
+    paper-gtk-theme
+    paper-icon-theme
+    gnome3.gnome-boxes
+    steam
+    nextcloud-client
+    plantuml
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
