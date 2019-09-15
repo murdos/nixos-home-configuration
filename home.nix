@@ -4,7 +4,6 @@ with pkgs; {
     ./pkgs
   ];
   home.packages = [
-    firefox
     google-chrome
     thefuck
     peco
@@ -38,5 +37,6 @@ with pkgs; {
   programs = {
     fish.enable = true;
     home-manager.enable = true;
+    firefox.enable = true;
   };
 }
