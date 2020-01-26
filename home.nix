@@ -42,6 +42,8 @@ with pkgs; {
     nextcloud-client
     plantuml
     keepassxc
+    adoptopenjdk-bin
+    nodejs
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
