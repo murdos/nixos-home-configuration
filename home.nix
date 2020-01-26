@@ -31,9 +31,17 @@ with pkgs; {
     paper-gtk-theme
     paper-icon-theme
     gnome3.gnome-boxes
+    gnome3.dconf-editor
+    gnome3.gnome-documents
+    gnome3.gnome-nettool
+    gnome3.gnome-power-manager
+    gnome3.gnome-tweaks
+    gnome3.gnome-usage
+    gnome3.vinagre
     steam
     nextcloud-client
     plantuml
+    keepassxc
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
