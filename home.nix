@@ -46,6 +46,7 @@ with pkgs; {
     keepassxc
     adoptopenjdk-bin
     nodejs
+    jq
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
