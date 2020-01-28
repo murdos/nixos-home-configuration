@@ -13,7 +13,6 @@ with pkgs; {
     rlwrap
     spotify
     slack
-    xpdf
     vlc
     feh
     simplescreenrecorder
