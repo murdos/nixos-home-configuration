@@ -20,6 +20,8 @@ with pkgs; {
     gimp
     shotwell
     docker-compose
+    kube3d
+    kubectl
     blueman
     libreoffice
     patchelf
