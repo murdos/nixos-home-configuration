@@ -4,29 +4,16 @@ with pkgs; {
     ./pkgs
   ];
   home.packages = [
+    # Desktop
     google-chrome
-    thefuck
-    peco
-    powerline-fonts
-    jetbrains.idea-ultimate
-    nix-index
-    rlwrap
     spotify
     slack
     vlc
-    feh
     simplescreenrecorder
     gimp
     shotwell
-    docker-compose
-    kube3d
-    kubectl
-    blueman
     libreoffice
-    patchelf
-    autoPatchelfHook
-    srm
-    vscode-with-extensions
+    blueman
     bibata-cursors
     paper-icon-theme
     gnome3.gnome-boxes
@@ -39,8 +26,24 @@ with pkgs; {
     gnome3.vinagre
     steam
     nextcloud-client
-    plantuml
     keepassxc
+    # CLI
+    thefuck
+    peco
+    powerline-fonts
+    rlwrap
+    srm
+    # Nix stuff
+    nix-index
+    patchelf
+    autoPatchelfHook
+    # Development
+    jetbrains.idea-ultimate
+    vscode-with-extensions
+    docker-compose
+    kube3d
+    kubectl
+    plantuml
     adoptopenjdk-bin
     nodejs
     jq
