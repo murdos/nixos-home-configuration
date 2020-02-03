@@ -27,9 +27,7 @@ with pkgs; {
     autoPatchelfHook
     srm
     vscode-with-extensions
-    arc-theme
-    arc-icon-theme
-    paper-gtk-theme
+    bibata-cursors
     paper-icon-theme
     gnome3.gnome-boxes
     gnome3.dconf-editor
