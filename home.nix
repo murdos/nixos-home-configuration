@@ -10,12 +10,15 @@ with pkgs; {
     slack
     vlc
     simplescreenrecorder
+    calibre
     gimp
     shotwell
     libreoffice
     blueman
     bibata-cursors
     paper-icon-theme
+    gnomeExtensions.clipboard-indicator
+    gnomeExtensions.sound-output-device-chooser
     gnome3.gnome-boxes
     gnome3.dconf-editor
     gnome3.gnome-documents
@@ -40,6 +43,7 @@ with pkgs; {
     # Development
     jetbrains.idea-ultimate
     vscode-with-extensions
+    dbeaver
     docker-compose
     kube3d
     kubectl
