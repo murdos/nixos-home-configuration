@@ -8,6 +8,7 @@
   xdg.configFile."fish/functions/fish_user_key_bindings.fish".source = ./key_bindings.fish;
 
   programs.fish = {
+    enable = true;
     shellInit = ''
       set NPM_PACKAGES "$HOME/.npm-packages"
       if not test -e $NPM_PACKAGES 

@@ -60,8 +60,6 @@ with pkgs; {
     enableExtraSocket = true;
   };
   programs = {
-    fish.enable = true;
     home-manager.enable = true;
-    firefox.enable = true;
   };
 }
