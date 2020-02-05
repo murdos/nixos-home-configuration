@@ -40,6 +40,7 @@ with pkgs; {
     nix-index
     patchelf
     autoPatchelfHook
+    any-nix-shell
     # Development
     jetbrains.idea-ultimate
     vscode-with-extensions

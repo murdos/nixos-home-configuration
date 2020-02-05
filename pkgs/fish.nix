@@ -9,6 +9,9 @@
 
   programs.fish = {
     enable = true;
+    promptInit = ''
+      any-nix-shell fish --info-right | source
+    '';
     shellInit = ''
       set NPM_PACKAGES "$HOME/.npm-packages"
       if not test -e $NPM_PACKAGES 
