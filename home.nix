@@ -36,6 +36,7 @@ with pkgs; {
     powerline-fonts
     rlwrap
     srm
+    htop
     # Nix stuff
     nix-index
     patchelf
@@ -52,6 +53,7 @@ with pkgs; {
     adoptopenjdk-bin
     nodejs
     jq
+    exercism
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
