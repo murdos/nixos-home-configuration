@@ -49,9 +49,12 @@ with pkgs; {
     docker-compose
     kube3d
     kubectl
+    graphviz
     plantuml
+    maven
     adoptopenjdk-bin
     nodejs
+    robo3t
     jq
     exercism
   ];
