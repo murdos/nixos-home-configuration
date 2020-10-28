@@ -20,6 +20,7 @@ with pkgs; {
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.sound-output-device-chooser
     gnome3.gnome-boxes
+    gnome3.gnome-books
     gnome3.dconf-editor
     gnome3.gnome-documents
     gnome3.gnome-nettool
@@ -27,6 +28,7 @@ with pkgs; {
     gnome3.gnome-tweaks
     gnome3.gnome-usage
     gnome3.vinagre
+    picard
     steam
     nextcloud-client
     keepassxc
