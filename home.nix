@@ -39,6 +39,7 @@ with pkgs; {
     rlwrap
     srm
     htop
+    dos2unix
     # Nix stuff
     nix-index
     patchelf
