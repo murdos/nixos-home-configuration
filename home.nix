@@ -45,6 +45,7 @@ with pkgs; {
     patchelf
     autoPatchelfHook
     any-nix-shell
+    steam-run-native
     # Development
     jetbrains.idea-ultimate
     vscode-with-extensions
