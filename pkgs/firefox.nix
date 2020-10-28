@@ -6,6 +6,7 @@
       isDefault = true;
       settings = {
         "browser.urlbar.clickSelectsAll" = true;
+        "browser.tabs.allowTabDetach" = false;
       };
     };
   };
