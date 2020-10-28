@@ -11,11 +11,6 @@ with pkgs; {
   home.homeDirectory = "/home/amino";
 
   home.packages = [
-    # Gnome
-    bibata-cursors
-    paper-icon-theme
-    gnomeExtensions.clipboard-indicator
-    gnomeExtensions.sound-output-device-chooser
     # Desktop apps
     google-chrome
     spotify
