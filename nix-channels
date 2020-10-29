@@ -1,2 +1,2 @@
-https://nixos.org/channels/nixos-20.03 nixpkgs
-https://github.com/rycee/home-manager/archive/release-20.03.tar.gz home-manager
+https://nixos.org/channels/nixos-20.09 nixpkgs
+https://github.com/nix-community/home-manager/archive/release-20.09.tar.gz home-manager
