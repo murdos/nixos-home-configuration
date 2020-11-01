@@ -37,14 +37,12 @@ with pkgs; {
     vscode-with-extensions
     dbeaver
     docker-compose
-    kube3d
     kubectl
     graphviz
     plantuml
     maven
-    adoptopenjdk-bin
+    jdk11
     nodejs
-    robo3t
     jq
     exercism
   ];
