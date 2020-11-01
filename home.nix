@@ -4,30 +4,16 @@ with pkgs; {
     ./pkgs
   ];
   home.packages = [
-    # Desktop
-    google-chrome
-    spotify
-    slack
-    vlc
-    simplescreenrecorder
-    calibre
-    gimp
-    shotwell
-    libreoffice
-    blueman
+    # Gnome
     bibata-cursors
     paper-icon-theme
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.sound-output-device-chooser
-    gnome3.gnome-boxes
-    gnome3.gnome-books
-    gnome3.dconf-editor
-    gnome3.gnome-documents
-    gnome3.gnome-nettool
-    gnome3.gnome-power-manager
-    gnome3.gnome-tweaks
-    gnome3.gnome-usage
-    gnome3.vinagre
+    # Desktop apps
+    google-chrome
+    spotify
+    slack
+    simplescreenrecorder
     picard
     steam
     nextcloud-client
