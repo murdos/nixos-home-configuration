@@ -3,6 +3,10 @@ with pkgs; {
   imports = [
     ./pkgs
   ];
+  home.stateVersion = "21.03";
+  home.username = "amino";
+  home.homeDirectory = "/home/amino";
+
   home.packages = [
     # Gnome
     bibata-cursors
