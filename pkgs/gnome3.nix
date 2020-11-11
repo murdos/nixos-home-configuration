@@ -54,4 +54,31 @@ with pkgs; {
       name = "Paper";
     };
   };
+
+  programs.gnome-terminal = {
+    enable = true;
+    showMenubar = false;
+    profile = {
+      "b1dcc9dd-5262-4d8d-a863-c897e6d979b9" = {
+        default = true;
+        visibleName = "Unamed";
+        showScrollbar = false;
+        cursorShape = "block";
+        colors = {
+          foregroundColor = "rgb(211,215,207)";
+          backgroundColor = "rgb(46,52,54)";
+          palette = [
+            "rgb(0,0,0)" "rgb(145,34,38)"
+            "rgb(119,137,0)" "rgb(174,123,0)"
+            "rgb(103,123,192)" "rgb(104,42,155)"
+            "rgb(43,102,81)" "rgb(146,149,147)"
+            "rgb(102,102,102)" "rgb(204,102,102)"
+            "rgb(181,189,104)" "rgb(240,198,116)"
+            "rgb(140,152,191)" "rgb(178,148,187)"
+            "rgb(138,190,183)" "rgb(236,235,236)"
+          ];
+        };
+      };
+    };
+  };
 }
