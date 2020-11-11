@@ -21,6 +21,8 @@ with pkgs; {
     thefuck
     peco
     powerline-fonts
+    jetbrains-mono
+    cascadia-code
     rlwrap
     srm
     htop
