@@ -7,6 +7,10 @@ with pkgs; {
       gnomeExtensions.sound-output-device-chooser
   ];
 
+  # Startup applications
+  home.file.".config/autostart/firefox.desktop".source = "${pkgs.firefox}/share/applications/firefox.desktop";
+  home.file.".config/autostart/spotify.desktop".source = "${pkgs.spotify}/share/applications/spotify.desktop";
+
   dconf.settings  = {
     "org/gnome/shell".favorite-apps = [
       "firefox.desktop"
