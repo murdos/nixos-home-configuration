@@ -3,7 +3,7 @@ with pkgs; {
   imports = [
     ./pkgs
   ];
-  home.stateVersion = "21.03";
+  home.stateVersion = "20.09";
   home.username = "amino";
   home.homeDirectory = "/home/amino";
 
