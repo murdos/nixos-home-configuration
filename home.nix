@@ -1,4 +1,7 @@
 { pkgs, ...}:
+let
+  pkgsUnstable = import <nixpkgs-unstable> {};
+in
 with pkgs; {
   imports = [
     ./pkgs
@@ -37,7 +40,7 @@ with pkgs; {
     any-nix-shell
     steam-run-native
     # Development
-    jetbrains.idea-ultimate
+    pkgsUnstable.jetbrains.idea-ultimate
     vscode-with-extensions
     dbeaver
     docker-compose
