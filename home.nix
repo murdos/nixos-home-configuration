@@ -22,9 +22,11 @@ with pkgs; {
     slack
     simplescreenrecorder
     picard
+    chromaprint
     steam
     nextcloud-client
     keepassxc
+    pdftk
     # CLI
     thefuck
     peco
