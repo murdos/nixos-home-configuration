@@ -11,6 +11,11 @@
       branch-clean = "!git branch --merged | grep -v master | xargs -n 1 git branch -d";
       next = "!git checkout `git rev-list HEAD..demo-end | tail -1`";
     };
-    extraConfig.core.excludesfile = "~/.gitignore_global";
+    includes = [{
+      condition = "gitdir:~/git/enedis-six/";
+      contents = {
+        user.email = "aurelien-externe.mino@enedis.fr";
+      };
+    }];
   };
 }
