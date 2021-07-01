@@ -5,6 +5,11 @@ with pkgs; {
       paper-icon-theme
       gnomeExtensions.clipboard-indicator
       gnomeExtensions.sound-output-device-chooser
+      gnomeExtensions.openweather
+      gnomeExtensions.system-monitor
+      gnomeExtensions.auto-move-windows
+      gnomeExtensions.places-status-indicator
+      gnomeExtensions.workspace-indicator
   ];
 
   # Startup applications
@@ -29,10 +34,11 @@ with pkgs; {
     # Shell extensions
     "org/gnome/shell".enabled-extensions = [
       gnomeExtensions.clipboard-indicator.uuid
-      "openweather-extension@jenslody.de"
-      "places-menu@gnome-shell-extensions.gcampax.github.com"
-      "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
-      "workspace-indicator@gnome-shell-extensions.gcampax.github.com"
+      gnomeExtensions.openweather.uuid
+      gnomeExtensions.system-monitor.uuid
+      gnomeExtensions.places-status-indicator.uuid
+      gnomeExtensions.auto-move-windows.uuid
+      gnomeExtensions.workspace-indicator.uuid
     ];
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = [
