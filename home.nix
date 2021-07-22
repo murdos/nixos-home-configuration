@@ -20,7 +20,7 @@ with pkgs; {
     google-chrome
     spotify
     slack
-    simplescreenrecorder
+    teams
     picard
     chromaprint
     steam
