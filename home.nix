@@ -43,8 +43,8 @@ with pkgs; {
     steam-run-native
     # Development
     pkgsUnstable.jetbrains.idea-ultimate
-    vscode-with-extensions
-    dbeaver
+    pkgsUnstable.vscode-with-extensions
+    pkgsUnstable.dbeaver
     docker-compose
     kubectl
     graphviz
