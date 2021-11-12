@@ -28,6 +28,7 @@ with pkgs; {
     keepassxc
     pdftk
     p3x-onenote
+    tilix
     # CLI
     thefuck
     peco
