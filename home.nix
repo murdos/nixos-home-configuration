@@ -50,7 +50,7 @@ with pkgs; {
     kubectl
     graphviz
     plantuml
-    maven
+    (maven.override { jdk = pkgs.jdk11; })
     jdk11
     nodejs
     yarn
