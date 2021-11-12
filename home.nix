@@ -27,6 +27,7 @@ with pkgs; {
     nextcloud-client
     keepassxc
     pdftk
+    p3x-onenote
     # CLI
     thefuck
     peco
