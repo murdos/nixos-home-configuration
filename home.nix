@@ -53,6 +53,7 @@ with pkgs; {
     maven
     jdk11
     nodejs
+    yarn
     jq
     exercism
   ];
