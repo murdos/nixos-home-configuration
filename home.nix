@@ -35,6 +35,7 @@ with pkgs; {
     srm
     htop
     dos2unix
+    bat
     # Nix stuff
     nix-index
     patchelf
