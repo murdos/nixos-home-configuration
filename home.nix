@@ -43,9 +43,9 @@ with pkgs; {
     any-nix-shell
     steam-run-native
     # Development
-    pkgsUnstable.jetbrains.idea-ultimate
-    pkgsUnstable.vscode-with-extensions
-    pkgsUnstable.dbeaver
+    jetbrains.idea-ultimate
+    vscode-with-extensions
+    dbeaver
     docker-compose
     kubectl
     graphviz
