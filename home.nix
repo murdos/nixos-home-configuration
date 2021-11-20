@@ -38,6 +38,8 @@ with pkgs; {
     htop
     dos2unix
     bat
+    ripgrep
+    ripgrep-all
     # Nix stuff
     nix-index
     patchelf
