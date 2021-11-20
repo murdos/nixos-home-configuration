@@ -22,6 +22,7 @@
     '';
     shellAliases = {
       cat = "bat";
+      vi = "vim";
     };
   };
 }
