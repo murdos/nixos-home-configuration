@@ -23,6 +23,8 @@
     shellAliases = {
       cat = "bat";
       vi = "vim";
+      du = "du -h";
+      df = "df -h";
     };
   };
 }
