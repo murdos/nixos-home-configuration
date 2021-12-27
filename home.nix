@@ -6,7 +6,7 @@ with pkgs; {
   imports = [
     ./pkgs
   ];
-  home.stateVersion = "21.05";
+  home.stateVersion = "21.11";
   home.username = "amino";
   home.homeDirectory = "/home/amino";
 
