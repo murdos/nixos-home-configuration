@@ -32,11 +32,11 @@ with pkgs; {
     };
     # Shell extensions
     "org/gnome/shell".enabled-extensions = [
-      gnomeExtensions.clipboard-indicator.uuid
-      gnomeExtensions.openweather.uuid
-      gnomeExtensions.places-status-indicator.uuid
-      gnomeExtensions.auto-move-windows.uuid
-      gnomeExtensions.workspace-indicator.uuid
+      gnomeExtensions.clipboard-indicator.extensionUuid
+      gnomeExtensions.openweather.extensionUuid
+      gnomeExtensions.places-status-indicator.extensionUuid
+      gnomeExtensions.auto-move-windows.extensionUuid
+      gnomeExtensions.workspace-indicator.extensionUuid
     ];
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = [
