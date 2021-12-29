@@ -41,6 +41,7 @@ with pkgs; {
       gnomeExtensions.places-status-indicator.extensionUuid
       gnomeExtensions.auto-move-windows.extensionUuid
       gnomeExtensions.workspace-indicator.extensionUuid
+      gnomeExtensions.sound-output-device-chooser.extensionUuid
     ];
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = [
