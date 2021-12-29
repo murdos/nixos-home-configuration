@@ -30,6 +30,10 @@ with pkgs; {
       clock-show-weekday = true;
       show-battery-percentage = true;
     };
+    "org/gnome/desktop/peripherals/touchpad" = {
+      tap-to-click = true;
+      two-finger-scrolling-enabled = true;
+    };
     # Shell extensions
     "org/gnome/shell".enabled-extensions = [
       gnomeExtensions.clipboard-indicator.extensionUuid
