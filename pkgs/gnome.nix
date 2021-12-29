@@ -6,7 +6,6 @@ with pkgs; {
       gnomeExtensions.clipboard-indicator
       gnomeExtensions.sound-output-device-chooser
       gnomeExtensions.openweather
-      gnomeExtensions.system-monitor
       gnomeExtensions.auto-move-windows
       gnomeExtensions.places-status-indicator
       gnomeExtensions.workspace-indicator
@@ -35,7 +34,6 @@ with pkgs; {
     "org/gnome/shell".enabled-extensions = [
       gnomeExtensions.clipboard-indicator.uuid
       gnomeExtensions.openweather.uuid
-      gnomeExtensions.system-monitor.uuid
       gnomeExtensions.places-status-indicator.uuid
       gnomeExtensions.auto-move-windows.uuid
       gnomeExtensions.workspace-indicator.uuid
