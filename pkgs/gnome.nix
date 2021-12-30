@@ -1,13 +1,23 @@
 { pkgs, ...}:
 with pkgs; {
   home.packages = [
+      # Additional Gtk themes
+      yaru-theme
+      amber-theme
+      arc-theme
+      # Cursors
       bibata-cursors
-      paper-icon-theme
-      gnomeExtensions.clipboard-indicator
-      gnomeExtensions.sound-output-device-chooser
-      gnomeExtensions.openweather
+      # Additional icon themes
+      tela-icon-theme
+      kora-icon-theme
+      # Extensions
       gnomeExtensions.auto-move-windows
+      gnomeExtensions.clipboard-indicator
+      gnomeExtensions.openweather
       gnomeExtensions.places-status-indicator
+      gnomeExtensions.sound-output-device-chooser
+      gnomeExtensions.user-themes
+      gnomeExtensions.window-list
       gnomeExtensions.workspace-indicator
   ];
 
@@ -26,7 +36,7 @@ with pkgs; {
     "system/locale".region = "fr_FR.UTF-8";
     "org/gnome/desktop/calendar".show-weekdate = true;
     "org/gnome/desktop/interface" = {
-      cursor-theme = "Bibata_Amber";
+      cursor-theme = "Bibata-Modern-Amber";
       clock-show-weekday = true;
       show-battery-percentage = true;
     };
@@ -36,17 +46,17 @@ with pkgs; {
     };
     # Shell extensions
     "org/gnome/shell".enabled-extensions = [
+      gnomeExtensions.auto-move-windows.extensionUuid
       gnomeExtensions.clipboard-indicator.extensionUuid
       gnomeExtensions.openweather.extensionUuid
       gnomeExtensions.places-status-indicator.extensionUuid
-      gnomeExtensions.auto-move-windows.extensionUuid
-      gnomeExtensions.workspace-indicator.extensionUuid
       gnomeExtensions.sound-output-device-chooser.extensionUuid
+      gnomeExtensions.user-themes.extensionUuid
+      gnomeExtensions.window-list.extensionUuid
     ];
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = [
         "spotify.desktop:2"
-        "slack.desktop:2"
       ];
     };
     "org/gnome/shell/extensions/openweather" = {
@@ -54,14 +64,24 @@ with pkgs; {
       decimal-places = 0;
       geolocation-provider = "openstreetmaps";
     };
+    "org/gnome/shell/extensions/user-theme".name = "Orchis-dark";
   };
 
   gtk = {
     enable = true;
     iconTheme = {
-      package = paper-icon-theme;
       name = "Paper";
+      package = paper-icon-theme;
     };
+    theme = {
+      name = "Orchis-light";
+      package = orchis;
+    };
+  };
+
+  xsession.pointerCursor = {
+    name = "Bibata-Modern-Amber";
+    package = bibata-cursors-translucent;
   };
 
   programs.gnome-terminal = {
@@ -70,21 +90,21 @@ with pkgs; {
     profile = {
       "b1dcc9dd-5262-4d8d-a863-c897e6d979b9" = {
         default = true;
-        visibleName = "Unamed";
+        visibleName = "Custom";
         showScrollbar = false;
         cursorShape = "block";
         colors = {
           foregroundColor = "rgb(211,215,207)";
           backgroundColor = "rgb(46,52,54)";
           palette = [
-            "rgb(0,0,0)" "rgb(145,34,38)"
-            "rgb(119,137,0)" "rgb(174,123,0)"
-            "rgb(103,123,192)" "rgb(104,42,155)"
-            "rgb(43,102,81)" "rgb(146,149,147)"
-            "rgb(102,102,102)" "rgb(204,102,102)"
-            "rgb(181,189,104)" "rgb(240,198,116)"
-            "rgb(140,152,191)" "rgb(178,148,187)"
-            "rgb(138,190,183)" "rgb(236,235,236)"
+            "rgb(7,54,66)" "rgb(220,50,47)"
+            "rgb(133,153,0)" "rgb(181,137,0)"
+            "rgb(38,139,210)" "rgb(211,54,130)"
+            "rgb(42,161,152)" "rgb(238,232,213)"
+            "rgb(0,43,54)" "rgb(203,75,22)"
+            "rgb(88,110,117)" "rgb(101,123,131)"
+            "rgb(131,148,150)" "rgb(108,113,196)"
+            "rgb(147,161,161)" "rgb(253,246,227)"
           ];
         };
       };
