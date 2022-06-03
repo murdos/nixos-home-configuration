@@ -4,59 +4,22 @@ let
 in
 with pkgs; {
   imports = [
-    ./pkgs
+    ./cli.nix
+    ./dev.nix
+    ./desktop.nix
   ];
   home.stateVersion = "22.05";
   home.username = "amino";
   home.homeDirectory = "/home/amino";
 
   home.packages = [
-    # Desktop apps
-    chromium
-    spotify
-    slack
-    teams
-    picard
-    chromaprint
-    steam
-    nextcloud-client
-    keepassxc
-    pdftk
-    p3x-onenote
-    tilix
-    # CLI
-    thefuck
-    peco
-    powerline-fonts
-    jetbrains-mono
-    cascadia-code
-    rlwrap
-    srm
-    htop
-    dos2unix
-    bat
-    ripgrep
-    ripgrep-all
     # Nix stuff
     nix-index
     patchelf
     autoPatchelfHook
     any-nix-shell
     steam-run-native
-    # Development
-    jetbrains.idea-ultimate
-    vscodium-fhs
-    dbeaver
-    docker-compose
-    kubectl
-    graphviz
-    plantuml
-    (maven.override { jdk = pkgs.jdk11; })
-    jdk11
-    nodejs
-    yarn
-    jq
-    exercism
+    appimage-run
   ];
   home.file.".nix-channels".source = ./nix-channels;
   services.gpg-agent = {
