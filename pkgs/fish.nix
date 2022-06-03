@@ -14,8 +14,8 @@
     '';
     shellInit = ''
       set NPM_PACKAGES "$HOME/.npm-packages"
-      if not test -e $NPM_PACKAGES 
-        mkdir $NPM_PACKAGES 
+      if not test -e $NPM_PACKAGES
+        mkdir $NPM_PACKAGES
       end
       set PATH $NPM_PACKAGES/bin $PATH
       set MANPATH $NPM_PACKAGES/share/man $MANPATH
@@ -25,6 +25,7 @@
       vi = "vim";
       du = "du -h";
       df = "df -h";
+      k = "kubectl";
     };
   };
 }
