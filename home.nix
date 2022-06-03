@@ -45,7 +45,7 @@ with pkgs; {
     steam-run-native
     # Development
     jetbrains.idea-ultimate
-    vscode-with-extensions
+    vscodium-fhs
     dbeaver
     docker-compose
     kubectl
