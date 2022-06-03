@@ -1,6 +1,7 @@
 { pkgs, ...}:
 with pkgs; {
   home.packages = [
+      gnome.gnome-tweaks
       # Additional Gtk themes
       yaru-theme
       amber-theme
@@ -79,7 +80,8 @@ with pkgs; {
     };
   };
 
-  xsession.pointerCursor = {
+  home.pointerCursor = {
+    gtk.enable = true;
     name = "Bibata-Modern-Amber";
     package = bibata-cursors-translucent;
   };
