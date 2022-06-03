@@ -12,7 +12,7 @@ with pkgs; {
 
   home.packages = [
     # Desktop apps
-    google-chrome
+    chromium
     spotify
     slack
     teams
