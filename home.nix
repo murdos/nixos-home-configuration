@@ -28,6 +28,8 @@ with pkgs; {
     enableSshSupport = true;
     enableExtraSocket = true;
   };
+  services.syncthing.enable = true;
+  systemd.user.startServices = "sd-switch";
   programs = {
     home-manager.enable = true;
   };
