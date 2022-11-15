@@ -33,5 +33,6 @@ imports = [
     diff-so-fancy
     #fzf
     tig
+    gotop
   ];
 }

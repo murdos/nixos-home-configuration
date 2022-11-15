@@ -23,6 +23,7 @@
     shellAliases = {
       cat = "bat";
       vi = "vim";
+      top = "gotop";
       du = "du -h";
       df = "df -h";
       k = "kubectl";
