@@ -8,6 +8,7 @@ imports = [
     chromium
     spotify
     slack
+    discord
     teams
     picard
     chromaprint
