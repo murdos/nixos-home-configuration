@@ -18,11 +18,11 @@ imports = [
     srm
     htop
     dos2unix
+    psmisc
     bat
     #ripgrep
     ripgrep-all
     gron
-    pstree
     httpie
     gdu
     fd
