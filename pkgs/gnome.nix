@@ -49,6 +49,10 @@ with pkgs; {
       tap-to-click = true;
       two-finger-scrolling-enabled = true;
     };
+    "org/gnome/settings-daemon/plugins/media-keys" = {
+      volume-down = [ "<Primary><Super>Down" ];
+      volume-up = [ "<Primary><Super>Up" ];
+    };
     # Shell extensions
     "org/gnome/shell".enabled-extensions = [
       gnomeExtensions.appindicator.extensionUuid
