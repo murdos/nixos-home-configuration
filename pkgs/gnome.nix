@@ -13,11 +13,13 @@ with pkgs; {
       tela-icon-theme
       kora-icon-theme
       # Extensions
+      gnomeExtensions.appindicator
       gnomeExtensions.auto-move-windows
       gnomeExtensions.clipboard-indicator
       gnomeExtensions.openweather
       gnomeExtensions.places-status-indicator
       gnomeExtensions.sound-output-device-chooser
+      gnomeExtensions.spotify-tray
       gnomeExtensions.user-themes
       gnomeExtensions.window-list
       gnomeExtensions.workspace-indicator
@@ -49,11 +51,13 @@ with pkgs; {
     };
     # Shell extensions
     "org/gnome/shell".enabled-extensions = [
+      gnomeExtensions.appindicator.extensionUuid
       gnomeExtensions.auto-move-windows.extensionUuid
       gnomeExtensions.clipboard-indicator.extensionUuid
       gnomeExtensions.openweather.extensionUuid
       gnomeExtensions.places-status-indicator.extensionUuid
       gnomeExtensions.sound-output-device-chooser.extensionUuid
+      gnomeExtensions.spotify-tray.extensionUuid
       gnomeExtensions.user-themes.extensionUuid
       gnomeExtensions.window-list.extensionUuid
     ];
