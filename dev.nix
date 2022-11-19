@@ -23,6 +23,7 @@ with pkgs; {
     dotty # = scala3
     sbt
     git-crypt
+    maven
     nodejs
     nodePackages.npm
     yarn
