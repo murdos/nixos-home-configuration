@@ -19,6 +19,7 @@ imports = [
     inkscape
     tilix
     obsidian
+    bitwarden
     #logseq
     zoom-us
     #etcher
