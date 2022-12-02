@@ -8,7 +8,7 @@ with pkgs; {
     ./dev.nix
     ./desktop.nix
   ];
-  home.stateVersion = "22.05";
+  home.stateVersion = "22.11";
   home.username = "amino";
   home.homeDirectory = "/home/amino";
 
