@@ -35,4 +35,11 @@ imports = [
     tig
     gotop
   ];
+  programs.helix = {
+    enable = true;
+    settings = {
+      theme = "Monokai";
+    };
+  };
+
 }
