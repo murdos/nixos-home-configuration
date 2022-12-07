@@ -24,4 +24,5 @@ imports = [
     zoom-us
     #etcher
   ];
+  xsession.numlock.enable = true;
 }
