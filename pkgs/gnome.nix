@@ -18,7 +18,6 @@ with pkgs; {
       gnomeExtensions.clipboard-indicator
       gnomeExtensions.openweather
       gnomeExtensions.places-status-indicator
-      gnomeExtensions.sound-output-device-chooser
       gnomeExtensions.spotify-tray
       gnomeExtensions.user-themes
       gnomeExtensions.window-list
@@ -63,7 +62,6 @@ with pkgs; {
       gnomeExtensions.clipboard-indicator.extensionUuid
       gnomeExtensions.openweather.extensionUuid
       gnomeExtensions.places-status-indicator.extensionUuid
-      gnomeExtensions.sound-output-device-chooser.extensionUuid
       gnomeExtensions.spotify-tray.extensionUuid
       gnomeExtensions.user-themes.extensionUuid
       gnomeExtensions.window-list.extensionUuid
