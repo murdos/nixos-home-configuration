@@ -49,6 +49,9 @@ with pkgs; {
       tap-to-click = true;
       two-finger-scrolling-enabled = true;
     };
+    "org/gnome/nautilus/preferences" = {
+      default-folder-viewer = "list-view";
+    };
     "org/gnome/settings-daemon/plugins/media-keys" = {
       volume-down = [ "<Primary><Super>Down" ];
       volume-up = [ "<Primary><Super>Up" ];
@@ -69,6 +72,9 @@ with pkgs; {
       application-list = [
         "spotify.desktop:2"
       ];
+    };
+    "org/gnome/shell/extensions/window-list/show-on-all-monitors" = {
+      show-on-all-monitors = true;
     };
     "org/gnome/shell/extensions/openweather" = {
       city = "45.7578137,4.8320114>Lyon>-1";
