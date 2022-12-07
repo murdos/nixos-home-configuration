@@ -27,7 +27,6 @@ with pkgs; {
     nodejs
     nodePackages.npm
     yarn
-    qgis
     exercism
     pgcli
   ];
