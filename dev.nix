@@ -26,6 +26,7 @@ with pkgs; {
     maven
     nodejs
     nodePackages.npm
+    nodePackages.pnpm
     yarn
     exercism
     pgcli
