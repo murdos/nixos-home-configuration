@@ -18,7 +18,6 @@ imports = [
     keepassxc
     pdftk
     xournalpp
-    p3x-onenote
     inkscape
     tilix
     obsidian
