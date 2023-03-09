@@ -24,6 +24,7 @@ with pkgs; {
     sbt
     git-crypt
     maven
+    gradle
     nodejs
     nodePackages.npm
     nodePackages.pnpm
