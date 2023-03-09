@@ -11,7 +11,7 @@ with pkgs; {
     jq.enable = true;
   };
   home.packages = [
-    jetbrains.idea-ultimate
+    pkgsUnstable.jetbrains.idea-ultimate
     vscodium-fhs
     dbeaver
     insomnia
