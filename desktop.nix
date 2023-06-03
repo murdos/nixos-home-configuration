@@ -24,6 +24,7 @@ imports = [
     bitwarden
     #logseq
     zoom-us
+    pinta
     #etcher
   ];
   xsession.numlock.enable = true;
