@@ -13,7 +13,7 @@
       any-nix-shell fish --info-right | source
     '';
     shellInit = ''
-      set NPM_PACKAGES "$HOME/.npm-packages"
+      set NPM_PACKAGES "$HOME/.npm"
       if not test -e $NPM_PACKAGES
         mkdir $NPM_PACKAGES
       end
