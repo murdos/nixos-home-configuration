@@ -16,13 +16,15 @@ with pkgs; {
       set PATH $NPM_PACKAGES/bin $PATH
       set MANPATH $NPM_PACKAGES/share/man $MANPATH
     '';
+    shellAbbrs = {
+      k = "kubectl";
+    };
     shellAliases = {
       cat = "bat";
       vi = "vim";
       top = "gotop";
       du = "du -h";
       df = "df -h";
-      k = "kubectl";
     };
     plugins = with pkgs; [
       {
