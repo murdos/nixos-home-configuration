@@ -1,12 +1,8 @@
-{
-  # TODO :
-  # to install  omf :
-  # curl -L --insecure https://get.oh-my.fish > install
-  # fish install --noninteractive
-  # checkout git@github.com:FaustXVI/omf-config in .config/omf
-  # run omf install
-  xdg.configFile."fish/functions/fish_user_key_bindings.fish".source = ./key_bindings.fish;
-
+{ pkgs, ...}:
+with pkgs; {
+  home.packages = [
+    fzf
+  ];
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
@@ -28,5 +24,27 @@
       df = "df -h";
       k = "kubectl";
     };
+    plugins = with pkgs; [
+      {
+        name = "bobthefisher";
+        src = fishPlugins.bobthefisher.src;
+      }
+      {
+        name = "fzf-fish";
+        src = fishPlugins.fzf-fish.src;
+      }
+      {
+        name = "z";
+        src = fishPlugins.z.src;
+      }
+      {
+        name = "forgit";
+        src = fishPlugins.forgit.src;
+      }
+      {
+        name = "puffer";
+        src = fishPlugins.puffer.src;
+      }
+    ];
   };
 }
