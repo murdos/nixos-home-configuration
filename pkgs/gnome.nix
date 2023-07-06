@@ -22,6 +22,7 @@ with pkgs; {
       gnomeExtensions.user-themes
       gnomeExtensions.window-list
       gnomeExtensions.workspace-indicator
+      gnomeExtensions.syncthing-icon
   ];
 
   # Startup applications
@@ -65,6 +66,7 @@ with pkgs; {
       gnomeExtensions.spotify-tray.extensionUuid
       gnomeExtensions.user-themes.extensionUuid
       gnomeExtensions.window-list.extensionUuid
+      gnomeExtensions.syncthing-icon.extensionUuid
     ];
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = [
