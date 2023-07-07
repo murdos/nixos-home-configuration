@@ -9,6 +9,7 @@ with pkgs; {
       package = jdk; # 17
     };
     jq.enable = true;
+    k9s.enable = true;
     vscode = {
       enable = true;
       package = vscodium-fhs;
