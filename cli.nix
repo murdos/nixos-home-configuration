@@ -19,7 +19,6 @@ imports = [
     htop
     dos2unix
     psmisc
-    bat
     #ripgrep
     ripgrep-all
     gron
@@ -35,11 +34,13 @@ imports = [
     tig
     gotop
   ];
-  programs.helix = {
-    enable = true;
-    settings = {
-      theme = "Monokai";
+  programs = {
+    bat.enable = true;
+    helix = {
+      enable = true;
+      settings = {
+        theme = "Monokai";
+      };
     };
   };
-
 }
