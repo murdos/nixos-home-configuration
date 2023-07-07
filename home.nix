@@ -23,6 +23,7 @@ with pkgs; {
   ];
   home.file.".nix-channels".source = ./nix-channels;
   home.file.".npmrc".source = ./npmrc;
+  xdg.configFile."nixpkgs/config.nix".source = ./config.nix;
   services.gpg-agent = {
     enable = true;
     defaultCacheTtl = 1800;
