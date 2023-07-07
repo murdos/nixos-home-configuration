@@ -6,7 +6,7 @@ with pkgs; {
   programs = {
     java = {
       enable = true;
-      package = jdk; # 17
+      package = jdk17;
     };
     jq.enable = true;
     k9s.enable = true;
