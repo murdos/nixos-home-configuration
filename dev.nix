@@ -10,6 +10,7 @@ with pkgs; {
     };
     jq.enable = true;
   };
+  home.file.".npmrc".source = ./npmrc;
   home.packages = [
     pkgsUnstable.jetbrains.idea-ultimate
     vscodium-fhs
