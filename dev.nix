@@ -9,11 +9,14 @@ with pkgs; {
       package = jdk; # 17
     };
     jq.enable = true;
+    vscode = {
+      enable = true;
+      package = vscodium-fhs;
+    };
   };
   home.file.".npmrc".source = ./npmrc;
   home.packages = [
     pkgsUnstable.jetbrains.idea-ultimate
-    vscodium-fhs
     dbeaver
     insomnia
     steam-run-native # to run Cypress or Protractor E2E
