@@ -15,7 +15,7 @@
       credential.helper = "cache";
     };
     includes = [{
-      condition = "gitdir:~/git/enedis-six/";
+      condition = "gitdir:~/git/enedis-*/";
       contents = {
         user.email = "aurelien-externe.mino@enedis.fr";
       };
