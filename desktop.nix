@@ -1,7 +1,4 @@
 { pkgs, ...}:
-let
-  pkgsUnstable = import <nixpkgs-unstable> {};
-in
 with pkgs; {
 imports = [
     ./pkgs/firefox.nix
@@ -12,7 +9,7 @@ imports = [
     spotify
     slack
     discord
-    pkgsUnstable.teams-for-linux
+    teams-for-linux
     picard
     chromaprint
     keepassxc

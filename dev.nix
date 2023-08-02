@@ -1,7 +1,4 @@
 { pkgs, ...}:
-let
-  pkgsUnstable = import <nixpkgs-unstable> {};
-in
 with pkgs; {
   programs = {
     java = {
@@ -17,7 +14,7 @@ with pkgs; {
   };
   home.file.".npmrc".source = ./npmrc;
   home.packages = [
-    pkgsUnstable.jetbrains.idea-ultimate
+    jetbrains.idea-ultimate
     dbeaver
     insomnia
     steam-run-native # to run Cypress or Protractor E2E

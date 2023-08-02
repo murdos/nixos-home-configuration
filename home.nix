@@ -1,7 +1,4 @@
 { pkgs, ...}:
-let
-  pkgsUnstable = import <nixpkgs-unstable> {};
-in
 with pkgs; {
   imports = [
     ./cli.nix
