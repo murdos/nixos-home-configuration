@@ -25,6 +25,7 @@ with pkgs; {
       top = "gotop";
       du = "du -h";
       df = "df -h";
+      gsudo = "sudo git -c \"include.path=$HOME/.config/git/config\"";
     };
     plugins = with pkgs; [
       {
