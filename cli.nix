@@ -26,7 +26,7 @@ imports = [
     gdu
     fd
     exa
-    duf
+    ncdu
     #tldr
     fasd
     diff-so-fancy
