@@ -14,6 +14,7 @@
     difftastic.enable = true;
     extraConfig = {
       credential.helper = "cache";
+      init.defaultBranch = "main";
     };
     includes = [{
       condition = "gitdir:~/git/enedis-*/";
