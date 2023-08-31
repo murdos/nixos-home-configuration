@@ -20,7 +20,6 @@ imports = [
     obsidian
     bitwarden
     #logseq
-    zoom-us
     pinta
     #etcher
   ];
