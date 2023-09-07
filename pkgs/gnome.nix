@@ -72,7 +72,7 @@ with pkgs; {
         "spotify.desktop:2"
       ];
     };
-    "org/gnome/shell/extensions/window-list/show-on-all-monitors" = {
+    "org/gnome/shell/extensions/window-list" = {
       show-on-all-monitors = true;
     };
     "org/gnome/shell/extensions/openweather" = {
