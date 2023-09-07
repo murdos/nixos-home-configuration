@@ -13,7 +13,7 @@
     };
     difftastic.enable = true;
     extraConfig = {
-      credential.helper = "cache";
+      credential.helper = "cache --timeout 3600";
       init.defaultBranch = "main";
     };
     includes = [{
