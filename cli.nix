@@ -19,8 +19,6 @@ imports = [
     htop
     dos2unix
     psmisc
-    #ripgrep
-    ripgrep-all
     gron
     httpie
     gdu
@@ -36,6 +34,7 @@ imports = [
   ];
   programs = {
     bat.enable = true;
+    ripgrep.enable = true;
     helix = {
       enable = true;
       settings = {
