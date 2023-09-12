@@ -23,7 +23,6 @@ imports = [
     httpie
     gdu
     fd
-    exa
     ncdu
     #tldr
     fasd
@@ -34,6 +33,7 @@ imports = [
   ];
   programs = {
     bat.enable = true;
+    eza.enable = true;
     ripgrep.enable = true;
     helix = {
       enable = true;

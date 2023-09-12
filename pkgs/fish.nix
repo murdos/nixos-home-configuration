@@ -20,7 +20,7 @@ with pkgs; {
       k = "kubectl";
     };
     shellAliases = {
-      ls = "exa --git";
+      ls = "eza --git";
       cat = "bat";
       vi = "vim";
       top = "gotop";
