@@ -27,6 +27,7 @@ with pkgs; {
     git-crypt
     maven
     gradle
+    bun
     nodejs
     nodePackages.npm
     nodePackages.pnpm
