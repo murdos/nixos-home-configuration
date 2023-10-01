@@ -3,7 +3,7 @@ with pkgs; {
   programs = {
     java = {
       enable = true;
-      package = jdk17;
+      package = jdk17.override { enableJavaFX = true; };
     };
     jq.enable = true;
     k9s.enable = true;
