@@ -8,23 +8,22 @@ imports = [
     ./pkgs/vim.nix
   ];
   home.packages = [
-    # CLI
     thefuck
     peco
     powerline-fonts
     jetbrains-mono
     cascadia-code
     rlwrap
-    srm
+    srm # secure replacement for rm that overwrites the data in the target files before unlinking them
     htop
+    gotop
     dos2unix
-    psmisc
-    gron
+    psmisc # small useful utilities that use the proc filesystem (such as fuser, killall and pstree)
+    gron # Make JSON greppable by transforming it into discrete assignments
     xh # Friendly and fast tool for sending HTTP requests (like httpie with a focus on improved performance)
     gdu # Disk usage analyzer with console interface
-    fd
+    fd # Simple, fast and user-friendly alternative to find
     tldr # Simplified and community-driven man pages with practical examples
-    gotop
     jless # command-line pager for JSON data
   ];
   programs = {
