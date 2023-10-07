@@ -24,7 +24,6 @@ imports = [
     gdu # Disk usage analyzer with console interface
     fd
     tldr # Simplified and community-driven man pages with practical examples
-    fasd
     diff-so-fancy
     gotop
     jless # command-line pager for JSON data
