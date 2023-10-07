@@ -21,9 +21,8 @@ imports = [
     psmisc
     gron
     xh # Friendly and fast tool for sending HTTP requests (like httpie with a focus on improved performance)
-    gdu
+    gdu # Disk usage analyzer with console interface
     fd
-    ncdu
     tldr # Simplified and community-driven man pages with practical examples
     fasd
     diff-so-fancy
