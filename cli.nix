@@ -20,7 +20,7 @@ imports = [
     dos2unix
     psmisc
     gron
-    httpie
+    xh # Friendly and fast tool for sending HTTP requests (like httpie with a focus on improved performance)
     gdu
     fd
     ncdu
