@@ -28,6 +28,7 @@ imports = [
     fasd
     diff-so-fancy
     gotop
+    jless # command-line pager for JSON data
   ];
   programs = {
     bat.enable = true;
