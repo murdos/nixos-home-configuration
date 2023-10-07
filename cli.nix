@@ -24,7 +24,7 @@ imports = [
     gdu
     fd
     ncdu
-    #tldr
+    tldr # Simplified and community-driven man pages with practical examples
     fasd
     diff-so-fancy
     #fzf
