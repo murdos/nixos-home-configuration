@@ -27,8 +27,6 @@ imports = [
     tldr # Simplified and community-driven man pages with practical examples
     fasd
     diff-so-fancy
-    #fzf
-    tig
     gotop
   ];
   programs = {
