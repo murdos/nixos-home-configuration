@@ -24,6 +24,7 @@ with pkgs; {
       cat = "bat";
       vi = "vim";
       top = "gotop";
+      http = "xh";
       du = "du -h";
       df = "df -h";
       gsudo = "sudo git -c \"include.path=$HOME/.config/git/config\"";
