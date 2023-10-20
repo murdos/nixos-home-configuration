@@ -15,7 +15,6 @@ with pkgs; {
     patchelf
     autoPatchelfHook
     any-nix-shell
-    steam-run-native
     appimage-run
   ];
   home.file.".nix-channels".source = ./nix-channels;
