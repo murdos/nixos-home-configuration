@@ -19,7 +19,6 @@ imports = [
     tilix
     obsidian
     bitwarden
-    #logseq
     pinta
     #etcher
   ];
