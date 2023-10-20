@@ -34,5 +34,6 @@ with pkgs; {
     yarn
     exercism
     pgcli
+    mob
   ];
 }
