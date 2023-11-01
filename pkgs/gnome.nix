@@ -16,13 +16,14 @@ with pkgs; {
       gnomeExtensions.appindicator
       gnomeExtensions.auto-move-windows
       gnomeExtensions.clipboard-indicator
+      gnomeExtensions.monitor-window-switcher-2
+      gnomeExtensions.no-overview
       gnomeExtensions.openweather
       gnomeExtensions.places-status-indicator
-      gnomeExtensions.spotify-tray
-      gnomeExtensions.user-themes
+      gnomeExtensions.tophat
+      gnomeExtensions.vitals
       gnomeExtensions.window-list
       gnomeExtensions.workspace-indicator
-      gnomeExtensions.syncthing-icon
   ];
 
   # Startup applications
@@ -59,13 +60,13 @@ with pkgs; {
     "org/gnome/shell".enabled-extensions = [
       gnomeExtensions.appindicator.extensionUuid
       gnomeExtensions.auto-move-windows.extensionUuid
-      gnomeExtensions.clipboard-indicator.extensionUuid
+#      gnomeExtensions.no-overview.extensionUuid
       gnomeExtensions.openweather.extensionUuid
       gnomeExtensions.places-status-indicator.extensionUuid
-      gnomeExtensions.spotify-tray.extensionUuid
-      gnomeExtensions.user-themes.extensionUuid
+      gnomeExtensions.monitor-window-switcher-2.extensionUuid
+#      gnomeExtensions.tophat.extensionUuid
+      gnomeExtensions.vitals.extensionUuid
       gnomeExtensions.window-list.extensionUuid
-      gnomeExtensions.syncthing-icon.extensionUuid
     ];
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = [
@@ -74,6 +75,10 @@ with pkgs; {
     };
     "org/gnome/shell/extensions/window-list" = {
       show-on-all-monitors = true;
+    };
+    "org/gnome/shell/extensions/window-app-switcher-on-active-monitor" = {
+      as-current-monitor = true;
+      ws-current-monitor = true;
     };
     "org/gnome/shell/extensions/openweather" = {
       city = "45.7578137,4.8320114>Lyon>-1";
