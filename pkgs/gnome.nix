@@ -80,7 +80,6 @@ with pkgs; {
       decimal-places = 0;
       geolocation-provider = "openstreetmaps";
     };
-    "org/gnome/shell/extensions/user-theme".name = "Orchis-dark";
   };
 
   gtk = {
