@@ -13,6 +13,7 @@ imports = [
     picard
     chromaprint
     keepassxc
+    protonvpn-gui
     pdftk
     xournalpp
     inkscape
