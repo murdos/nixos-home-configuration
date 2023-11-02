@@ -52,6 +52,9 @@ with pkgs; {
     "org/gnome/nautilus/preferences" = {
       default-folder-viewer = "list-view";
     };
+    "org/gtk/gtk4/settings/file-chooser" = {
+      sort-directories-first = true;
+    };
     "org/gnome/settings-daemon/plugins/media-keys" = {
       volume-down = [ "<Primary><Super>Down" ];
       volume-up = [ "<Primary><Super>Up" ];
