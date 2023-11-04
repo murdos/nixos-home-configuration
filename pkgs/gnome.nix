@@ -55,6 +55,10 @@ with pkgs; {
     "org/gtk/gtk4/settings/file-chooser" = {
       sort-directories-first = true;
     };
+    "org/gnome/mutter" = {
+      dynamic-workspaces = true;
+      edge-tiling = true;
+    };
     "org/gnome/settings-daemon/plugins/media-keys" = {
       volume-down = [ "<Primary><Super>Down" ];
       volume-up = [ "<Primary><Super>Up" ];
