@@ -21,7 +21,6 @@ imports = [
     obsidian
     bitwarden
     pinta
-    #etcher
   ];
   xsession.numlock.enable = true;
 }
