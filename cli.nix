@@ -1,6 +1,6 @@
-{ pkgs, ...}:
+{ pkgs, ... }:
 with pkgs; {
-imports = [
+  imports = [
     ./pkgs/bash.nix
     ./pkgs/fish.nix
     ./pkgs/git.nix

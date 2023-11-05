@@ -1,36 +1,36 @@
-{ pkgs, ...}:
+{ pkgs, ... }:
 with pkgs; {
   home.packages = [
-      gnome.gnome-tweaks
-      gnome.dconf-editor
-      # Additional Gtk themes
-      yaru-theme
-      amber-theme
-      arc-theme
-      # Cursors
-      bibata-cursors
-      # Additional icon themes
-      tela-icon-theme
-      kora-icon-theme
-      # Extensions
-      gnomeExtensions.appindicator
-      gnomeExtensions.auto-move-windows
-      gnomeExtensions.clipboard-indicator
-      gnomeExtensions.monitor-window-switcher-2
-      gnomeExtensions.no-overview
-      gnomeExtensions.openweather
-      gnomeExtensions.places-status-indicator
-      gnomeExtensions.tophat
-      gnomeExtensions.vitals
-      gnomeExtensions.window-list
-      gnomeExtensions.workspace-indicator
+    gnome.gnome-tweaks
+    gnome.dconf-editor
+    # Additional Gtk themes
+    yaru-theme
+    amber-theme
+    arc-theme
+    # Cursors
+    bibata-cursors
+    # Additional icon themes
+    tela-icon-theme
+    kora-icon-theme
+    # Extensions
+    gnomeExtensions.appindicator
+    gnomeExtensions.auto-move-windows
+    gnomeExtensions.clipboard-indicator
+    gnomeExtensions.monitor-window-switcher-2
+    gnomeExtensions.no-overview
+    gnomeExtensions.openweather
+    gnomeExtensions.places-status-indicator
+    gnomeExtensions.tophat
+    gnomeExtensions.vitals
+    gnomeExtensions.window-list
+    gnomeExtensions.workspace-indicator
   ];
 
   # Startup applications
   home.file.".config/autostart/firefox.desktop".source = "${pkgs.firefox}/share/applications/firefox.desktop";
   home.file.".config/autostart/org.gnome.Console.desktop".source = "${pkgs.gnome-console}/share/applications/org.gnome.Console.desktop";
 
-  dconf.settings  = {
+  dconf.settings = {
     "org/gnome/shell".favorite-apps = [
       "firefox.desktop"
       "org.gnome.Terminal.desktop"
@@ -67,11 +67,11 @@ with pkgs; {
     "org/gnome/shell".enabled-extensions = [
       gnomeExtensions.appindicator.extensionUuid
       gnomeExtensions.auto-move-windows.extensionUuid
-#      gnomeExtensions.no-overview.extensionUuid
+      #gnomeExtensions.no-overview.extensionUuid
       gnomeExtensions.openweather.extensionUuid
       gnomeExtensions.places-status-indicator.extensionUuid
       gnomeExtensions.monitor-window-switcher-2.extensionUuid
-#      gnomeExtensions.tophat.extensionUuid
+      #gnomeExtensions.tophat.extensionUuid
       gnomeExtensions.vitals.extensionUuid
       gnomeExtensions.window-list.extensionUuid
     ];

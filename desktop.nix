@@ -1,6 +1,6 @@
-{ pkgs, ...}:
+{ pkgs, ... }:
 with pkgs; {
-imports = [
+  imports = [
     ./pkgs/firefox.nix
     ./pkgs/gnome.nix
   ];

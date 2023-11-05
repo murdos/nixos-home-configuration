@@ -35,6 +35,6 @@
       set showmatch
       syntax on
       set hlsearch
-      '';
+    '';
   };
 }
