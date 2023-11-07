@@ -55,6 +55,9 @@ with pkgs; {
     "org/gtk/gtk4/settings/file-chooser" = {
       sort-directories-first = true;
     };
+    "org/gtk/settings/file-chooser" = {
+      sort-directories-first = true;
+    };
     "org/gnome/mutter" = {
       dynamic-workspaces = true;
       edge-tiling = true;
