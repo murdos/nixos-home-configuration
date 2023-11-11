@@ -20,6 +20,7 @@ with pkgs; {
     steam-run-native # to run Cypress or Protractor E2E
     docker-compose
     kubectl
+    dive # A tool for exploring each layer in a docker image
     graphviz
     plantuml
     dotty # = scala3
