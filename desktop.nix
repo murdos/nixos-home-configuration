@@ -38,6 +38,7 @@ with pkgs; {
       "image/bmp" = [ "org.gnome.eog.desktop" ];
       "image/jpg" = [ "org.gnome.eog.desktop" ];
       "image/pjpeg" = [ "org.gnome.eog.desktop" ];
+      "image/png" = [ "org.gnome.eog.desktop" ];
       "image/tiff" = [ "org.gnome.eog.desktop" ];
       "image/x-bmp" = [ "org.gnome.eog.desktop" ];
       "image/x-gray" = [ "org.gnome.eog.desktop" ];
