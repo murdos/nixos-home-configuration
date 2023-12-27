@@ -42,5 +42,7 @@ with pkgs; {
     exercism
     pgcli
     mob
+    nixpkgs-fmt
+    pre-commit
   ];
 }
