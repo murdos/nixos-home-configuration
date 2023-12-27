@@ -21,6 +21,7 @@ with pkgs; {
     obsidian
     bitwarden
     pinta
+    vlc
   ];
   xsession.numlock.enable = true;
 
