@@ -5,6 +5,13 @@ with pkgs; {
       enable = true;
       package = jdk21.override { enableJavaFX = true; };
     };
+    gradle = {
+      enable = true;
+      settings = {
+        "org.gradle.caching" = true;
+        "org.gradle.parallel" = true;
+      };
+    };
     jq.enable = true;
     k9s.enable = true;
     vscode = {
@@ -27,7 +34,6 @@ with pkgs; {
     sbt
     git-crypt
     maven
-    gradle
     bun
     nodejs
     nodePackages.npm
