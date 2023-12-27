@@ -18,7 +18,9 @@ with pkgs; {
     appimage-run
   ];
   home.file.".nix-channels".source = ./nix-channels;
-  xdg.configFile."nixpkgs/config.nix".source = ./config.nix;
+  nixpkgs.config = {
+    allowUnfree = true;
+  };
   services.gpg-agent = {
     enable = true;
     defaultCacheTtl = 1800;
