@@ -5,7 +5,7 @@ with pkgs; {
     ./dev.nix
     ./desktop.nix
   ];
-  home.stateVersion = "23.05";
+  home.stateVersion = "23.11";
   home.username = "amino";
   home.homeDirectory = "/home/amino";
 
@@ -24,6 +24,7 @@ with pkgs; {
     defaultCacheTtl = 1800;
     enableSshSupport = true;
     enableExtraSocket = true;
+    pinentryFlavor = "gnome3";
   };
   services.syncthing.enable = true;
   systemd.user.startServices = "sd-switch";
