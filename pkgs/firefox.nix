@@ -3,10 +3,10 @@ with pkgs; {
   programs.firefox = {
     enable = true;
     package = pkgs.firefox-wayland.override {
-      # See nixpkgs' firefox/wrapper.nix to check which options you can use
-      cfg = {
-        enableGnomeExtensions = true;
-      };
+      nativeMessagingHosts = [
+        pkgs.gnome-browser-connector
+        pkgs.fx-cast-bridge
+      ];
     };
     profiles."default" = {
       path = "haf6sy71.default";
