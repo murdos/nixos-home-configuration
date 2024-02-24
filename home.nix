@@ -19,6 +19,8 @@ with pkgs; {
   ];
   home.file.".nix-channels".source = ./nix-channels;
   nixpkgs.config = {
+    permittedInsecurePackages = [
+    ];
     allowUnfree = true;
   };
   services.gpg-agent = {
