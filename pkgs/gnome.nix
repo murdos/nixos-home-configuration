@@ -51,6 +51,9 @@ with pkgs; {
     };
     "org/gnome/nautilus/preferences" = {
       default-folder-viewer = "list-view";
+      show-image-thumbnails = "always";
+      show-directory-item-counts = "always";
+      recursive-search = "always";
     };
     "org/gtk/gtk4/settings/file-chooser" = {
       sort-directories-first = true;
