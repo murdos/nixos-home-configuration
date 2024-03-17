@@ -4,6 +4,7 @@ with pkgs; {
     ./cli.nix
     ./dev.nix
     ./desktop.nix
+    ./gaming.nix
   ];
   home.stateVersion = "23.11";
   home.username = "amino";
@@ -28,7 +29,7 @@ with pkgs; {
     defaultCacheTtl = 1800;
     enableSshSupport = true;
     enableExtraSocket = true;
-    pinentryFlavor = "gnome3";
+    pinentryPackage = pkgs.pinentry-gnome3;
   };
   services.syncthing.enable = true;
   systemd.user.startServices = "sd-switch";
