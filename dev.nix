@@ -44,5 +44,6 @@ with pkgs; {
     mob
     nixpkgs-fmt
     pre-commit
+    otel-desktop-viewer
   ];
 }
