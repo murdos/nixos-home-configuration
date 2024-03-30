@@ -13,6 +13,7 @@ with pkgs; {
   home.packages = [
     # Nix stuff
     nix-index
+    nix-tree
     patchelf
     autoPatchelfHook
     any-nix-shell
