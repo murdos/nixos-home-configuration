@@ -14,13 +14,14 @@ with pkgs; {
     chromaprint
     keepassxc
     protonvpn-gui
-    pdftk
-    xournalpp
+    pdftk # for manipulating pdfs
+    xournalpp # for annotating pdfs
+    handbrake # for converting videos
     inkscape
-    tilix
+    tilix # for a better terminal
     obsidian
     bitwarden
-    pinta
+    pinta # for quick image editing
     vlc
   ];
   xsession.numlock.enable = true;
