@@ -20,6 +20,15 @@ with pkgs; {
     appimage-run
   ];
   home.file.".nix-channels".source = ./nix-channels;
+  nix = {
+    package = pkgs.nix;
+    settings = {
+      extra-experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
+    };
+  };
   nixpkgs.config = {
     permittedInsecurePackages = [
     ];
