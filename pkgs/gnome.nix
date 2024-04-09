@@ -44,6 +44,7 @@ with pkgs; {
       cursor-theme = "Bibata-Modern-Amber";
       clock-show-weekday = true;
       show-battery-percentage = true;
+      enable-hot-corners = false;
     };
     "org/gnome/desktop/peripherals/touchpad" = {
       tap-to-click = true;
