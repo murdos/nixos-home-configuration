@@ -25,11 +25,13 @@ with pkgs; {
     fd # Simple, fast and user-friendly alternative to find
     tldr # Simplified and community-driven man pages with practical examples
     jless # command-line pager for JSON data
+    yq # jq wrapper for YAML, XML, TOML documents
   ];
   programs = {
     bat.enable = true;
     eza.enable = true;
     ripgrep.enable = true;
+    jq.enable = true;
     helix = {
       enable = true;
       settings = {

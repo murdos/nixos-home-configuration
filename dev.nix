@@ -12,7 +12,6 @@ with pkgs; {
         "org.gradle.parallel" = true;
       };
     };
-    jq.enable = true;
     k9s.enable = true;
     vscode = {
       enable = true;
