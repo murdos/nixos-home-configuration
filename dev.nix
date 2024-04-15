@@ -18,7 +18,14 @@ with pkgs; {
       package = vscodium-fhs;
     };
   };
+
   home.file.".npmrc".source = ./npmrc;
+
+  home.sessionVariables = {
+    CYPRESS_INSTALL_BINARY = "0";
+    CYPRESS_RUN_BINARY = "${pkgs.cypress}/bin/Cypress";
+  };
+
   home.packages = [
     jetbrains.idea-ultimate
     dbeaver
