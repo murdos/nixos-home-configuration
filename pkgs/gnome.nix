@@ -44,7 +44,7 @@ with pkgs; {
     "system/locale".region = "fr_FR.UTF-8";
     "org/gnome/desktop/calendar".show-weekdate = true;
     "org/gnome/desktop/interface" = {
-      cursor-theme = "Bibata-Modern-Amber";
+      cursor-theme = "Bibata_Tinted";
       clock-show-weekday = true;
       show-battery-percentage = true;
       enable-hot-corners = false;
@@ -106,7 +106,7 @@ with pkgs; {
 
   home.pointerCursor = {
     gtk.enable = true;
-    name = "Bibata-Modern-Amber";
+    name = "Bibata_Tinted";
     package = bibata-cursors-translucent;
   };
 }
