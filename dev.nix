@@ -32,8 +32,8 @@ with pkgs; {
       cypress = (import
         (builtins.fetchTarball {
           url =
-            "https://github.com/r-ryantm/nixpkgs/archive/b60070f1795d93b34e59fa6d693e26e8575ab259.tar.gz";
-          sha256 = "1604cy5r0vc7c49bzw014zxc182xp1akpz964070zzqm7sb7hyjm";
+            "https://github.com/r-ryantm/nixpkgs/archive/d3b5e6b362b067b816ec39ad104ef9c2a61b9199.tar.gz";
+          sha256 = "00rnf863x5gibdn0psyxazjhj6jhgjpx6qg24nbiklh6hvziwbla";
         })
         { }).cypress;
     })
