@@ -18,6 +18,7 @@ with pkgs; {
     htop
     gotop
     dos2unix
+    nix-inspect # Interactive TUI for inspecting nix configs and other expressions
     psmisc # small useful utilities that use the proc filesystem (such as fuser, killall and pstree)
     gron # Make JSON greppable by transforming it into discrete assignments
     xh # Friendly and fast tool for sending HTTP requests (like httpie with a focus on improved performance)
