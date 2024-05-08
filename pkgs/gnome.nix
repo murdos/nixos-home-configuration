@@ -12,19 +12,22 @@ with pkgs; {
     # Additional icon themes
     tela-icon-theme
     kora-icon-theme
-    # Extensions
-    gnomeExtensions.appindicator
-    gnomeExtensions.auto-move-windows
-    gnomeExtensions.clipboard-indicator
-    gnomeExtensions.monitor-window-switcher-2
-    gnomeExtensions.no-overview
-    gnomeExtensions.openweather
-    gnomeExtensions.places-status-indicator
-    gnomeExtensions.tophat
-    gnomeExtensions.vitals
-    gnomeExtensions.window-list
-    gnomeExtensions.workspace-indicator
   ];
+
+  programs.gnome-shell = {
+    enable = true;
+    extensions = [
+        { package = gnomeExtensions.appindicator; }
+        { package = gnomeExtensions.auto-move-windows; }
+        { package = gnomeExtensions.monitor-window-switcher-2; }
+#        { package = gnomeExtensions.no-overview; }
+        { package = gnomeExtensions.openweather; }
+        { package = gnomeExtensions.places-status-indicator; }
+        { package = gnomeExtensions.system-monitor; }
+        { package = gnomeExtensions.user-themes; }
+        { package = gnomeExtensions.window-list; }
+    ];
+  };
 
   # Startup applications
   home.file.".config/autostart/firefox.desktop".source = "${pkgs.firefox}/share/applications/firefox.desktop";
@@ -70,18 +73,6 @@ with pkgs; {
       volume-down = [ "<Primary><Super>Down" ];
       volume-up = [ "<Primary><Super>Up" ];
     };
-    # Shell extensions
-    "org/gnome/shell".enabled-extensions = [
-      gnomeExtensions.appindicator.extensionUuid
-      gnomeExtensions.auto-move-windows.extensionUuid
-      #gnomeExtensions.no-overview.extensionUuid
-      gnomeExtensions.openweather.extensionUuid
-      gnomeExtensions.places-status-indicator.extensionUuid
-      gnomeExtensions.monitor-window-switcher-2.extensionUuid
-      #gnomeExtensions.tophat.extensionUuid
-      gnomeExtensions.vitals.extensionUuid
-      gnomeExtensions.window-list.extensionUuid
-    ];
     "org/gnome/shell/extensions/auto-move-windows" = {
       application-list = [
         "spotify.desktop:2"
