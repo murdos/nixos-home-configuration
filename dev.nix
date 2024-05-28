@@ -41,7 +41,7 @@ with pkgs; {
 
   home.packages = [
     jetbrains.idea-ultimate
-    dbeaver
+    dbeaver-bin
     insomnia
     steam-run-native # to run Cypress or Protractor E2E
     docker-compose
