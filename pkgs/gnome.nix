@@ -17,15 +17,15 @@ with pkgs; {
   programs.gnome-shell = {
     enable = true;
     extensions = [
-        { package = gnomeExtensions.appindicator; }
-        { package = gnomeExtensions.auto-move-windows; }
-        { package = gnomeExtensions.monitor-window-switcher-2; }
-#        { package = gnomeExtensions.no-overview; }
-        { package = gnomeExtensions.openweather; }
-        { package = gnomeExtensions.places-status-indicator; }
-        { package = gnomeExtensions.system-monitor; }
-        { package = gnomeExtensions.user-themes; }
-        { package = gnomeExtensions.window-list; }
+      { package = gnomeExtensions.appindicator; }
+      { package = gnomeExtensions.auto-move-windows; }
+      { package = gnomeExtensions.monitor-window-switcher-2; }
+      #        { package = gnomeExtensions.no-overview; }
+      { package = gnomeExtensions.openweather; }
+      { package = gnomeExtensions.places-status-indicator; }
+      { package = gnomeExtensions.system-monitor; }
+      { package = gnomeExtensions.user-themes; }
+      { package = gnomeExtensions.window-list; }
     ];
   };
 
@@ -67,6 +67,7 @@ with pkgs; {
     };
     "org/gnome/mutter" = {
       dynamic-workspaces = true;
+      workspaces-only-on-primary = false;
       edge-tiling = true;
     };
     "org/gnome/settings-daemon/plugins/media-keys" = {
