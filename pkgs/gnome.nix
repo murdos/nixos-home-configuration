@@ -32,7 +32,6 @@ with pkgs; {
 
   # Startup applications
   home.file.".config/autostart/firefox.desktop".source = "${pkgs.firefox}/share/applications/firefox.desktop";
-  home.file.".config/autostart/org.gnome.Console.desktop".source = "${pkgs.gnome-console}/share/applications/org.gnome.Console.desktop";
 
   dconf.settings = {
     "org/gnome/shell".favorite-apps = [
