@@ -23,6 +23,7 @@ with pkgs; {
       #        { package = gnomeExtensions.no-overview; }
       { package = gnomeExtensions.openweather; }
       { package = gnomeExtensions.places-status-indicator; }
+      { package = gnomeExtensions.quake-terminal; }
       { package = gnomeExtensions.system-monitor; }
       { package = gnomeExtensions.user-themes; }
       { package = gnomeExtensions.window-list; }
@@ -36,7 +37,6 @@ with pkgs; {
   dconf.settings = {
     "org/gnome/shell".favorite-apps = [
       "firefox.desktop"
-      "org.gnome.Terminal.desktop"
       "org.gnome.Nautilus.desktop"
       "idea-ultimate.desktop"
       "org.keepassxc.KeePassXC.desktop"
@@ -78,6 +78,10 @@ with pkgs; {
       application-list = [
         "spotify.desktop:2"
       ];
+    };
+    "org/gnome/shell/extensions/quake-terminal" = {
+      terminal-id = "org.gnome.Console.desktop";
+      render-on-current-monitor = true;
     };
     "org/gnome/shell/extensions/window-list" = {
       show-on-all-monitors = true;
