@@ -1,8 +1,8 @@
 { pkgs, ... }:
 with pkgs; {
   home.packages = [
-    gnome.gnome-tweaks
-    gnome.dconf-editor
+    gnome-tweaks
+    dconf-editor
     # Additional Gtk themes
     yaru-theme
     amber-theme
