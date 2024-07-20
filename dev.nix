@@ -53,6 +53,7 @@ with pkgs; {
     sbt
     git-crypt
     maven
+    asdf-vm
     bun
     nodejs
     nodePackages.npm
