@@ -9,7 +9,6 @@ with pkgs; {
     spotify
     slack
     discord
-    teams-for-linux
     picard
     chromaprint
     keepassxc
