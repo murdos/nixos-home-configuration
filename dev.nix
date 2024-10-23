@@ -24,6 +24,8 @@ with pkgs; {
   home.sessionVariables = {
     CYPRESS_INSTALL_BINARY = "0";
     CYPRESS_RUN_BINARY = "${pkgs.cypress}/bin/Cypress";
+    PLAYWRIGHT_BROWSERS_PATH = "${pkgs.playwright-driver.browsers}";
+    PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS = "true";
   };
 
   nixpkgs.overlays = [
@@ -63,6 +65,7 @@ with pkgs; {
     pgcli
     mob
     nixpkgs-fmt
+    playwright-driver.browsers
     pre-commit
     otel-desktop-viewer
   ];
