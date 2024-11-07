@@ -104,7 +104,7 @@ with pkgs; {
     };
     theme = {
       name = "Orchis-light";
-      package = orchis;
+      package = orchis-theme;
     };
   };
 
