@@ -25,6 +25,7 @@ with pkgs; {
       { package = gnomeExtensions.places-status-indicator; }
       { package = gnomeExtensions.quake-terminal; }
       { package = gnomeExtensions.system-monitor; }
+      { package = gnomeExtensions.tiling-shell; }
       { package = gnomeExtensions.user-themes; }
       { package = gnomeExtensions.window-list; }
     ];
