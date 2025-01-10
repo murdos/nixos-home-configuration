@@ -21,7 +21,7 @@ with pkgs; {
       { package = gnomeExtensions.auto-move-windows; }
       { package = gnomeExtensions.monitor-window-switcher-2; }
       #        { package = gnomeExtensions.no-overview; }
-      { package = gnomeExtensions.openweather; }
+      { package = gnomeExtensions.openweather-refined; }
       { package = gnomeExtensions.places-status-indicator; }
       { package = gnomeExtensions.quake-terminal; }
       { package = gnomeExtensions.system-monitor; }
@@ -89,10 +89,10 @@ with pkgs; {
       as-current-monitor = true;
       ws-current-monitor = true;
     };
-    "org/gnome/shell/extensions/openweather" = {
-      city = "45.7578137,4.8320114>Lyon>-1";
-      decimal-places = 0;
-      geolocation-provider = "openstreetmaps";
+    "org/gnome/shell/extensions/openweatherrefined" = {
+      locs = "[(0, 'Lyon', 0, '45.7578137,4.8320114')]";
+      position-in-panel = "center";
+      wind-speed-unit = "m/s";
     };
   };
 
