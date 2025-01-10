@@ -19,8 +19,6 @@ with pkgs; {
     extensions = [
       { package = gnomeExtensions.appindicator; }
       { package = gnomeExtensions.auto-move-windows; }
-      { package = gnomeExtensions.monitor-window-switcher-2; }
-      #        { package = gnomeExtensions.no-overview; }
       { package = gnomeExtensions.openweather-refined; }
       { package = gnomeExtensions.places-status-indicator; }
       { package = gnomeExtensions.quake-terminal; }
