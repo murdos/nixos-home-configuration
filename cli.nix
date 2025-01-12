@@ -38,15 +38,22 @@ with pkgs; {
     http = "xh";
     du = "du -h";
     df = "df -h";
-    man = "batman";
-    grep = "batgrep";
+#    man = "batman";
+#    grep = "batgrep";
     gsudo = "sudo git -c \"include.path=$HOME/.config/git/config\"";
   };
 
   programs = {
+    atuin = { # improved shell history
+      enable = true;
+      flags = [ "--disable-up-arrow" ];
+      settings = {
+        search_mode = "skim";
+      };
+    };
     bat = {
       enable = true;
-      extraPackages = with pkgs.bat-extras; [ batman batgrep ];
+#      extraPackages = with pkgs.bat-extras; [ batman batgrep ];
     };
     btop.enable = true;
     eza.enable = true;
