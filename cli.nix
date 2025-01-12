@@ -38,11 +38,16 @@ with pkgs; {
     http = "xh";
     du = "du -h";
     df = "df -h";
+    man = "batman";
+    grep = "batgrep";
     gsudo = "sudo git -c \"include.path=$HOME/.config/git/config\"";
   };
 
   programs = {
-    bat.enable = true;
+    bat = {
+      enable = true;
+      extraPackages = with pkgs.bat-extras; [ batman batgrep ];
+    };
     btop.enable = true;
     eza.enable = true;
     ripgrep.enable = true;
