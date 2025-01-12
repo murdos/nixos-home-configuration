@@ -14,7 +14,6 @@ with pkgs; {
     rlwrap
     srm # secure replacement for rm that overwrites the data in the target files before unlinking them
     htop
-    gotop
     dos2unix
     oha # http load generator with realtime terminal interface
     mkvtoolnix-cli # for manipulating mkv files
@@ -35,7 +34,7 @@ with pkgs; {
     ls = "eza --git --header";
     cat = "bat";
     vi = "vim";
-    top = "gotop";
+    top = "btop";
     http = "xh";
     du = "du -h";
     df = "df -h";
@@ -44,6 +43,7 @@ with pkgs; {
 
   programs = {
     bat.enable = true;
+    btop.enable = true;
     eza.enable = true;
     ripgrep.enable = true;
     jq.enable = true;
