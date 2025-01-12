@@ -1,9 +1,10 @@
 { pkgs, ... }:
 with pkgs; {
-  imports = [
-    ./pkgs/firefox.nix
-    ./pkgs/gnome.nix
-  ];
+  imports =
+    let
+      ls = dir: builtins.map (f: (dir + "/${f}")) (builtins.attrNames (builtins.readDir dir));
+    in
+    ls ./apps/desktop;
   home.packages = [
     chromium
     spotify

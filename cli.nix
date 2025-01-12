@@ -1,12 +1,10 @@
 { pkgs, ... }:
 with pkgs; {
-  imports = [
-    ./pkgs/bash.nix
-    ./pkgs/fish.nix
-    ./pkgs/git.nix
-    ./pkgs/tmux.nix
-    ./pkgs/vim.nix
-  ];
+  imports =
+    let
+      ls = dir: builtins.map (f: (dir + "/${f}")) (builtins.attrNames (builtins.readDir dir));
+    in
+    ls ./apps/cli;
   home.packages = [
     thefuck
     peco
