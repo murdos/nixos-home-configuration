@@ -23,7 +23,6 @@ with pkgs; {
     xh # Friendly and fast tool for sending HTTP requests (like httpie with a focus on improved performance)
     procs # Modern replacement for ps
     gdu # Disk usage analyzer with console interface
-    fd # Simple, fast and user-friendly alternative to find
     tldr # Simplified and community-driven man pages with practical examples
     jless # command-line pager for JSON data
     visidata # interactive multitool for tabular data
@@ -63,6 +62,7 @@ with pkgs; {
       };
     };
     eza.enable = true;
+    fd.enable = true; # Simple, fast and user-friendly alternative to find
     ripgrep.enable = true;
     jq.enable = true;
     helix = {
