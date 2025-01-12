@@ -23,16 +23,6 @@ with pkgs; {
     shellAbbrs = {
       k = "kubectl";
     };
-    shellAliases = {
-      ls = "eza --git";
-      cat = "bat";
-      vi = "vim";
-      top = "gotop";
-      http = "xh";
-      du = "du -h";
-      df = "df -h";
-      gsudo = "sudo git -c \"include.path=$HOME/.config/git/config\"";
-    };
     plugins = with pkgs; [
       {
         name = "bobthefisher";

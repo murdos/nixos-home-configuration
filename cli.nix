@@ -30,6 +30,18 @@ with pkgs; {
     visidata # interactive multitool for tabular data
     yq # jq wrapper for YAML, XML, TOML documents
   ];
+
+  home.shellAliases = {
+    ls = "eza --git --header";
+    cat = "bat";
+    vi = "vim";
+    top = "gotop";
+    http = "xh";
+    du = "du -h";
+    df = "df -h";
+    gsudo = "sudo git -c \"include.path=$HOME/.config/git/config\"";
+  };
+
   programs = {
     bat.enable = true;
     eza.enable = true;
