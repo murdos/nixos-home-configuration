@@ -56,6 +56,12 @@ with pkgs; {
 #      extraPackages = with pkgs.bat-extras; [ batman batgrep ];
     };
     btop.enable = true;
+    direnv = {
+      enable = true;
+      nix-direnv = {
+        enable = true;
+      };
+    };
     eza.enable = true;
     ripgrep.enable = true;
     jq.enable = true;

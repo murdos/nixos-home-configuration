@@ -44,7 +44,6 @@ with pkgs; {
   services.syncthing.enable = true;
   systemd.user.startServices = "sd-switch";
   programs = {
-    direnv.nix-direnv.enable = true;
     home-manager.enable = true;
   };
 }
