@@ -33,10 +33,6 @@ with pkgs; {
         src = fishPlugins.fzf-fish.src;
       }
       {
-        name = "z";
-        src = fishPlugins.z.src;
-      }
-      {
         name = "forgit";
         src = fishPlugins.forgit.src;
       }

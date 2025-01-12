@@ -71,5 +71,9 @@ with pkgs; {
         theme = "Monokai";
       };
     };
+    zoxide = {
+      enable = true;
+      options = [ "--cmd cd" ];
+    };
   };
 }
