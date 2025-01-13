@@ -14,13 +14,6 @@ with pkgs; {
     };
   };
 
-  home.file.".npmrc".source = ./npmrc;
-
-  home.sessionVariables = {
-    PLAYWRIGHT_BROWSERS_PATH = "${pkgs.playwright-driver.browsers}";
-    PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS = "true";
-  };
-
   home.packages = [
     dbeaver-bin
     insomnia
@@ -34,16 +27,10 @@ with pkgs; {
     sbt
     git-crypt
     asdf-vm
-    bun
-    nodejs
-    nodePackages.npm
-    nodePackages.pnpm
-    yarn
     exercism
     pgcli
     mob
     nixpkgs-fmt
-    playwright-driver.browsers
     pre-commit
     otel-desktop-viewer
   ];
