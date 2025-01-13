@@ -50,5 +50,5 @@ with pkgs; {
         </configuration>
       </toolchain>
     </toolchains>
-   '';
+  '';
 }
