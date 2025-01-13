@@ -7,17 +7,6 @@ with pkgs; {
     ls ./apps/dev;
 
   programs = {
-    java = {
-      enable = true;
-      package = jdk21.override { enableJavaFX = true; };
-    };
-    gradle = {
-      enable = true;
-      settings = {
-        "org.gradle.caching" = true;
-        "org.gradle.parallel" = true;
-      };
-    };
     k9s.enable = true;
     vscode = {
       enable = true;
@@ -33,7 +22,6 @@ with pkgs; {
   };
 
   home.packages = [
-    jetbrains.idea-ultimate
     dbeaver-bin
     insomnia
     steam-run-native # to run Cypress or Protractor E2E
@@ -45,7 +33,6 @@ with pkgs; {
     dotty # = scala3
     sbt
     git-crypt
-    maven
     asdf-vm
     bun
     nodejs
