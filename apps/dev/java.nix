@@ -16,6 +16,7 @@ with pkgs; {
 
   home.packages = [
     jetbrains.idea-ultimate
+    jetbrains.gateway
     maven
     mvnd
   ];
