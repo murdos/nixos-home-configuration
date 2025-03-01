@@ -19,6 +19,7 @@ with pkgs; {
     xournalpp # for annotating pdfs
     handbrake # for converting videos
     inkscape
+    koodo-reader # for reading ebooks
     tilix # for a better terminal
     obsidian
     bitwarden
