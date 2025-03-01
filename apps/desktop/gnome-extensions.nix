@@ -22,7 +22,8 @@ with pkgs; {
       ];
     };
     "org/gnome/shell/extensions/quake-terminal" = {
-      terminal-id = "org.gnome.Console.desktop";
+      animation-time = 150;
+      terminal-id = "com.mitchellh.ghostty.desktop";
       render-on-current-monitor = true;
     };
     "org/gnome/shell/extensions/window-list" = {
