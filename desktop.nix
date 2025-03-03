@@ -10,6 +10,7 @@ with pkgs; {
     spotify
     slack
     discord
+    element-desktop
     picard
     chromaprint
     keepassxc
