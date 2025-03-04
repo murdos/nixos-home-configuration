@@ -3,15 +3,6 @@ with pkgs; {
   home.packages = [
     gnome-tweaks
     dconf-editor
-    # Additional Gtk themes
-    yaru-theme
-    amber-theme
-    arc-theme
-    # Cursors
-    bibata-cursors
-    # Additional icon themes
-    tela-icon-theme
-    kora-icon-theme
   ];
 
   # Startup applications
@@ -27,7 +18,7 @@ with pkgs; {
     "system/locale".region = "fr_FR.UTF-8";
     "org/gnome/desktop/calendar".show-weekdate = true;
     "org/gnome/desktop/interface" = {
-      cursor-theme = "Bibata_Tinted";
+      cursor-theme = "Volantes_cursors";
       clock-show-weekday = true;
       show-battery-percentage = true;
       enable-hot-corners = false;
@@ -65,15 +56,11 @@ with pkgs; {
       name = "Paper";
       package = paper-icon-theme;
     };
-    theme = {
-      name = "Orchis-light";
-      package = orchis-theme;
-    };
   };
 
   home.pointerCursor = {
     gtk.enable = true;
-    name = "Bibata_Tinted";
-    package = bibata-cursors-translucent;
+    name = "Volantes_cursors";
+    package = volantes-cursors;
   };
 }
