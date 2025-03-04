@@ -29,6 +29,8 @@ with pkgs; {
     yq # jq wrapper for YAML, XML, TOML documents
   ];
 
+  home.shell.enableShellIntegration = true;
+
   home.shellAliases = {
     ls = "eza --git --header";
     cat = "bat";
