@@ -18,7 +18,7 @@ with pkgs; {
     "system/locale".region = "fr_FR.UTF-8";
     "org/gnome/desktop/calendar".show-weekdate = true;
     "org/gnome/desktop/interface" = {
-      cursor-theme = "Volantes_cursors";
+      cursor-theme = "volantes_cursors";
       clock-show-weekday = true;
       show-battery-percentage = true;
       enable-hot-corners = false;
@@ -60,7 +60,7 @@ with pkgs; {
 
   home.pointerCursor = {
     gtk.enable = true;
-    name = "Volantes_cursors";
+    name = "volantes_cursors";
     package = volantes-cursors;
   };
 }
