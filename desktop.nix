@@ -15,7 +15,6 @@ with pkgs; {
     chromaprint
     keepassxc
     protonvpn-gui
-    synology-drive-client
     pdftk # for manipulating pdfs
     xournalpp # for annotating pdfs
     handbrake # for converting videos
