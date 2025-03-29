@@ -41,6 +41,10 @@ with pkgs; {
     enableExtraSocket = true;
     pinentryPackage = pkgs.pinentry-gnome3;
   };
+  services.home-manager.autoUpgrade = {
+    enable = true;
+    frequency = "12:30";
+  };
   services.syncthing.enable = true;
   systemd.user.startServices = "sd-switch";
   programs = {
