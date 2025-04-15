@@ -45,6 +45,7 @@ with pkgs; {
       edge-tiling = true;
     };
     "org/gnome/settings-daemon/plugins/media-keys" = {
+      home = [ "<Super>e" ];
       volume-down = [ "<Primary><Super>Down" ];
       volume-up = [ "<Primary><Super>Up" ];
     };
