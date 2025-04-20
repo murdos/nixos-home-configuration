@@ -15,6 +15,7 @@ with pkgs; {
     chromaprint
     keepassxc
     protonvpn-gui
+    planify
     pdftk # for manipulating pdfs
     xournalpp # for annotating pdfs
     handbrake # for converting videos
