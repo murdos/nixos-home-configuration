@@ -19,5 +19,6 @@ with pkgs; {
     jetbrains.gateway
     maven
     mvnd
+    async-profiler
   ];
 }
