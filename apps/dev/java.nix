@@ -21,4 +21,8 @@ with pkgs; {
     mvnd
     async-profiler
   ];
+
+  home.shellAliases = {
+    asprof = "async-profiler";
+  };
 }
