@@ -5,6 +5,7 @@ with pkgs; {
     ./dev.nix
     ./desktop.nix
     ./gaming.nix
+    ./nix.nix
   ];
   home.stateVersion = "24.11";
   home.username = "amino";
@@ -19,26 +20,6 @@ with pkgs; {
     any-nix-shell
     appimage-run
   ];
-  home.file.".nix-channels".source = ./nix-channels;
-  nix = {
-    gc = {
-      automatic = true;
-      frequency = "daily";
-      options = "--delete-older-than 30d";
-    };
-    package = pkgs.nix;
-    settings = {
-      extra-experimental-features = [
-        "nix-command"
-        "flakes"
-      ];
-    };
-  };
-  nixpkgs.config = {
-    permittedInsecurePackages = [
-    ];
-    allowUnfree = true;
-  };
   services.gpg-agent = {
     enable = true;
     defaultCacheTtl = 1800;
