@@ -5,9 +5,6 @@ with pkgs; {
     dconf-editor
   ];
 
-  # Startup applications
-  home.file.".config/autostart/firefox.desktop".source = "${pkgs.firefox}/share/applications/firefox.desktop";
-
   dconf.settings = {
     "org/gnome/shell".favorite-apps = [
       "firefox.desktop"
