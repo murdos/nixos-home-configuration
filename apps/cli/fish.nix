@@ -24,6 +24,10 @@ with pkgs; {
     };
     plugins = with pkgs; [
       {
+        name = "autopair.fish";
+        src = fishPlugins.autopair.src;
+      }
+      {
         name = "bobthefisher";
         src = fishPlugins.bobthefisher.src;
       }
