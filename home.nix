@@ -44,7 +44,7 @@ with pkgs; {
     defaultCacheTtl = 1800;
     enableSshSupport = true;
     enableExtraSocket = true;
-    pinentryPackage = pkgs.pinentry-gnome3;
+    pinentry.package = pkgs.pinentry-gnome3;
   };
   services.home-manager.autoUpgrade = {
     enable = true;
