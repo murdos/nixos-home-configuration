@@ -67,6 +67,7 @@ with pkgs; {
     fd.enable = true; # Simple, fast and user-friendly alternative to find
     ripgrep.enable = true;
     jq.enable = true;
+    fzf.enable = true;
     helix = {
       enable = true;
       settings = {
