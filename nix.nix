@@ -5,7 +5,7 @@ with pkgs; {
     gc = {
       automatic = true;
       frequency = "daily";
-      options = "--delete-older-than 30d";
+      options = "--delete-older-than 20d";
     };
     package = pkgs.nix;
     settings = {
