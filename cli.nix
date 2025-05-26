@@ -17,6 +17,7 @@ with pkgs; {
     htop
     dos2unix
     oha # http load generator with realtime terminal interface
+    hyperfine # benchmarking tool, alternative to `time`
     mkvtoolnix-cli # for manipulating mkv files
     nix-inspect # Interactive TUI for inspecting nix configs and other expressions
     psmisc # small useful utilities that use the proc filesystem (such as fuser, killall and pstree)
