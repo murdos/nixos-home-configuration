@@ -70,15 +70,7 @@ with pkgs; {
     jq.enable = true;
     fzf.enable = true;
     pay-respects.enable = true; # thefuck replacement written in Rust
-    helix = {
-      enable = true;
-      settings = {
-        theme = "Monokai";
-      };
-    };
-    yazi = {
-      enable = true;
-    };
+    yazi.enable = true;
     zoxide = {
       enable = true;
       options = [ "--cmd cd" ];
