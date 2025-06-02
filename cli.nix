@@ -7,7 +7,6 @@ with pkgs; {
     ls ./apps/cli;
   home.packages = [
     bandwhich # shows real-time bandwidth usage per process
-    thefuck
     peco
     powerline-fonts
     jetbrains-mono
@@ -70,6 +69,7 @@ with pkgs; {
     ripgrep.enable = true;
     jq.enable = true;
     fzf.enable = true;
+    pay-respects.enable = true; # thefuck replacement written in Rust
     helix = {
       enable = true;
       settings = {
