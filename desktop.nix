@@ -26,5 +26,6 @@ with pkgs; {
     pinta # for quick image editing
     vlc
   ];
+  programs.foliate.enable = true;
   xsession.numlock.enable = true;
 }
