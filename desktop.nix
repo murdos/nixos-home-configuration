@@ -11,6 +11,7 @@ with pkgs; {
     slack
     discord
     element-desktop
+    signal-desktop
     picard
     chromaprint
     keepassxc
