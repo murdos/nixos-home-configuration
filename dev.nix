@@ -16,7 +16,7 @@ with pkgs; {
 
   home.packages = [
     dbeaver-bin
-    insomnia
+    bruno # git-integrated, fully offline, and open-source API client alternative to Postman
     steam-run-native # to run Cypress or Protractor E2E
     docker-compose
     kubectl
