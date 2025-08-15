@@ -26,6 +26,15 @@ with pkgs; {
       terminal-id = "com.mitchellh.ghostty.desktop";
       render-on-current-monitor = true;
     };
+    "org/gnome/shell/extensions/tilingshell" = {
+      inner-gaps = 4;
+      outer-gaps = 0;
+      enable-autotiling = true;
+      show-indicator = true;
+      layout-json = ''
+        [{"id":"Layout 3","tiles":[{"x":0,"y":0,"width":0.33,"height":1,"groups":[1]},{"x":0.33,"y":0,"width":0.67,"height":1,"groups":[1]}]},{"id":"Layout 4","tiles":[{"x":0,"y":0,"width":0.67,"height":1,"groups":[1]},{"x":0.67,"y":0,"width":0.33,"height":1,"groups":[1]}]},{"id":"26519831","tiles":[{"x":0,"y":0,"width":0.5,"height":1,"groups":[1]},{"x":0.5,"y":0,"width":0.5000000000000078,"height":1,"groups":[1]}]},{"id":"26957275","tiles":[{"x":0,"y":0,"width":1,"height":1,"groups':[]}]}]
+      '';
+    };
     "org/gnome/shell/extensions/window-list" = {
       show-on-all-monitors = true;
     };
