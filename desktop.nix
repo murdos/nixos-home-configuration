@@ -24,6 +24,7 @@ with pkgs; {
     koodo-reader # for reading ebooks
     obsidian
     bitwarden
+    synology-drive-client
     pinta # for quick image editing
     vlc
   ];
