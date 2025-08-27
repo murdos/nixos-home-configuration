@@ -4,7 +4,7 @@ with pkgs; {
   nix = {
     gc = {
       automatic = true;
-      frequency = "daily";
+      dates = "daily";
       options = "--delete-older-than 20d";
     };
     package = pkgs.nix;
