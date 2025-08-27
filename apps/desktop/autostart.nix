@@ -17,6 +17,14 @@
       pkg = pkgs.firefox;
       desktopFile = "firefox.desktop";
     }
+    {
+      pkg = pkgs.synology-drive-client;
+      desktopFile = "synology-drive.desktop";
+    }
+    {
+      pkg = pkgs.localsend;
+      desktopFile = "LocalSend.desktop";
+    }
   ];
 in
   mkMerge (map mapAutostart autostarts)
