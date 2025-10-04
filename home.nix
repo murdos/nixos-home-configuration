@@ -7,7 +7,7 @@ with pkgs; {
     ./gaming.nix
     ./nix.nix
   ];
-  home.stateVersion = "24.11";
+  home.stateVersion = "25.05";
   home.username = "amino";
   home.homeDirectory = "/home/amino";
 
