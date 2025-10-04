@@ -3,7 +3,7 @@ with pkgs; {
   programs = {
     java = {
       enable = true;
-      package = jdk21.override { enableJavaFX = true; };
+      package = jdk25;
     };
     gradle = {
       enable = true;
