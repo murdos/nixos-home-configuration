@@ -43,10 +43,10 @@ with pkgs; {
       <toolchain>
         <type>jdk</type>
         <provides>
-          <version>23</version>
+          <version>25</version>
         </provides>
         <configuration>
-          <jdkHome>${pkgs.openjdk23}</jdkHome>
+          <jdkHome>${pkgs.openjdk25}</jdkHome>
         </configuration>
       </toolchain>
     </toolchains>
