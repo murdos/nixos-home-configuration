@@ -23,6 +23,7 @@ with pkgs; {
     dive # A tool for exploring each layer in a docker image
     graphviz
     plantuml
+    mermaid-cli
     dotty # = scala3
     sbt
     git-crypt
