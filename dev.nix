@@ -17,7 +17,7 @@ with pkgs; {
   home.packages = [
     dbeaver-bin
     bruno # git-integrated, fully offline, and open-source API client alternative to Postman
-    steam-run-native # to run Cypress or Protractor E2E
+    steam-run # to run Cypress or Protractor E2E
     docker-compose
     kubectl
     dive # A tool for exploring each layer in a docker image
