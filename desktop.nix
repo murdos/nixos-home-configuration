@@ -14,6 +14,7 @@ with pkgs; {
     signal-desktop
     picard
     chromaprint
+    sound-juicer
     keepassxc
     protonvpn-gui
     planify
