@@ -24,7 +24,7 @@ with pkgs; {
     inkscape
     koodo-reader # for reading ebooks
     obsidian
-    bitwarden
+    bitwarden-desktop
     synology-drive-client
     pinta # for quick image editing
     vlc
