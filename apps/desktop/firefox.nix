@@ -2,7 +2,7 @@
 with pkgs; {
   programs.firefox = {
     enable = true;
-    package = pkgs.firefox-wayland.override {
+    package = pkgs.firefox.override {
       nativeMessagingHosts = [
         pkgs.gnome-browser-connector
         pkgs.fx-cast-bridge
