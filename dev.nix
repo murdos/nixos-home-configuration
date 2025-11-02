@@ -24,7 +24,7 @@ with pkgs; {
     graphviz
     plantuml
     mermaid-cli
-    dotty # = scala3
+    scala_3
     sbt
     git-crypt
     asdf-vm
