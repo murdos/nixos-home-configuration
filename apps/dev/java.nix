@@ -20,6 +20,7 @@ with pkgs; {
     maven
     mvnd
     async-profiler
+    visualvm
   ];
 
   home.shellAliases = {
