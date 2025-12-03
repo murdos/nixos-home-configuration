@@ -26,6 +26,7 @@ with pkgs; {
     gdu # Disk usage analyzer with console interface
     tldr # Simplified and community-driven man pages with practical examples
     jless # command-line pager for JSON data
+    streamrip # scriptable music downloader for Qobuz, Tidal, SoundCloud, and Deezer
     visidata # interactive multitool for tabular data
     yq # jq wrapper for YAML, XML, TOML documents
   ];
