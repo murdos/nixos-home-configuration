@@ -1,6 +1,7 @@
 { pkgs, ... }:
 with pkgs; {
   home.packages = [
+    file-roller
     gnome-tweaks
     dconf-editor
   ];
