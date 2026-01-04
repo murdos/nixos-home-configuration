@@ -207,6 +207,10 @@
 
           "audio/m3u"
         ];
+        compressedArchives = [
+          "application/x-7z-compressed"
+          "application/zip"
+        ];
         writerDocuments = [
           "application/vnd.oasis.opendocument.text"
           "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
@@ -217,6 +221,7 @@
         ];
       in
       (lib.genAttrs images (_: [ "org.gnome.Loupe.desktop" ]))
+      // (lib.genAttrs compressedArchives (_: [ "org.gnome.FileRoller.desktop" ]))
       // (lib.genAttrs urls (_: [ "firefox.desktop" ]))
       // (lib.genAttrs documents (_: [ "org.gnome.Evince.desktop" ]))
       // (lib.genAttrs audioVideo (_: [ "vlc.desktop" ]))
