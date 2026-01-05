@@ -12,6 +12,10 @@ with pkgs; {
       enable = true;
       package = vscodium-fhs;
     };
+    radicle = {
+      enable = true;
+      uri.rad.browser.enable = true;
+    };
   };
 
   home.packages = [
@@ -30,6 +34,7 @@ with pkgs; {
     asdf-vm
     exercism
     pgcli
+    radicle-desktop
     mob
     nixpkgs-fmt
     pre-commit
