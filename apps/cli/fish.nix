@@ -17,7 +17,7 @@ with pkgs; {
       set MANPATH $NPM_PACKAGES/share/man $MANPATH
 
       # asdf integration
-      source ${pkgs.asdf-vm}/share/asdf-vm/asdf.fish
+      source ${pkgs.asdf-vm}/share/fish/vendor_completions.d/asdf.fish
     '';
     shellAbbrs = {
       k = "kubectl";
