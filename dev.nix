@@ -16,6 +16,7 @@ with pkgs; {
       enable = true;
       uri.rad.browser.enable = true;
     };
+    gemini-cli.enable = true;
   };
 
   home.packages = [
