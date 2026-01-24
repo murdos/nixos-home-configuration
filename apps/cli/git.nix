@@ -16,6 +16,7 @@
       init.defaultBranch = "main";
       push.default = "current";
       pull.rebase = "merges";
+      protocol.rad.allow = "always";
     };
     includes = [{
       condition = "gitdir:~/git/enedis-*/";
