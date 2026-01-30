@@ -17,6 +17,7 @@ with pkgs; {
       uri.rad.browser.enable = true;
     };
     gemini-cli.enable = true;
+    opencode.enable = true;
   };
 
   home.packages = [
