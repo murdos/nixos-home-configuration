@@ -76,5 +76,6 @@ with pkgs; {
       enable = true;
       options = [ "--cmd cd" ];
     };
+    zellij.enable = true; # tmux-like
   };
 }
