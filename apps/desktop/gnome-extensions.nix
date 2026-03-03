@@ -5,7 +5,7 @@ with pkgs; {
     extensions = [
       { package = gnomeExtensions.appindicator; }
       { package = gnomeExtensions.auto-move-windows; }
-      { package = gnomeExtensions.openweather-refined; }
+      { package = gnomeExtensions.simpleweather; }
       { package = gnomeExtensions.places-status-indicator; }
       { package = gnomeExtensions.quake-terminal; }
       { package = gnomeExtensions.system-monitor; }
@@ -56,10 +56,13 @@ with pkgs; {
       as-current-monitor = true;
       ws-current-monitor = true;
     };
-    "org/gnome/shell/extensions/openweatherrefined" = {
-      locs = "[(0, 'Lyon', 0, '45.7578137,4.8320114')]";
-      position-in-panel = "center";
-      wind-speed-unit = "m/s";
+    "org/gnome/shell/extensions/simple-weather" = {
+      is-activated = true;
+      panel-box = "center";
+      locations = [
+        "{'name':'Villeurbanne','lat':45.77,'lon':4.88}"
+      ];
+      unit-preset = "metric";
     };
   };
 }
