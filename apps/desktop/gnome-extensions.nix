@@ -12,6 +12,7 @@ with pkgs; {
       { package = gnomeExtensions.tiling-shell; }
       { package = gnomeExtensions.user-themes; }
       { package = gnomeExtensions.window-list; }
+      { package = gnomeExtensions.paperwm; }
     ];
   };
 
@@ -34,6 +35,19 @@ with pkgs; {
       layout-json = ''
         [{"id":"Layout 3","tiles":[{"x":0,"y":0,"width":0.33,"height":1,"groups":[1]},{"x":0.33,"y":0,"width":0.67,"height":1,"groups":[1]}]},{"id":"Layout 4","tiles":[{"x":0,"y":0,"width":0.67,"height":1,"groups":[1]},{"x":0.67,"y":0,"width":0.33,"height":1,"groups":[1]}]},{"id":"26519831","tiles":[{"x":0,"y":0,"width":0.5,"height":1,"groups":[1]},{"x":0.5,"y":0,"width":0.5000000000000078,"height":1,"groups":[1]}]},{"id":"26957275","tiles":[{"x":0,"y":0,"width":1,"height":1,"groups':[]}]}]
       '';
+    };
+    "org/gnome/shell/extensions/paperwm" = {
+      edge-preview-enable = false;
+      show-workspace-indicator = false;
+      horizontal-margin = 5;
+      window-gap = 5;
+      vertical-margin = 2;
+      vertical-margin-bottom = 2;
+    };
+    "org/gnome/shell/extensions/paperwm/keybindings" = {
+      barf-out = [ "" ];
+      barf-out-active = [ "<Super>o" ];
+      new-window = [ "<Super>n" ];
     };
     "org/gnome/shell/extensions/window-list" = {
       show-on-all-monitors = true;
