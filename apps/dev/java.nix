@@ -15,6 +15,7 @@ with pkgs; {
   };
 
   home.packages = [
+    jbang
     jetbrains.idea
     jetbrains.gateway
     maven
