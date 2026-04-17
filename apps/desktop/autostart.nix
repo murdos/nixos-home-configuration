@@ -1,21 +1,30 @@
 {
-  lib,
   pkgs,
+  lib,
   ...
 }: let
-  desktop = import ../../lib/desktop-utils.nix { inherit lib pkgs; };
   inherit (lib.modules) mkMerge;
 
-  registerAutostartPackage = pkg:
-    let desktopFile = desktop.defaultDesktopFile pkg;
-    in {
-      xdg.configFile."autostart/${desktopFile}".source = "${pkg}/share/applications/${desktopFile}";
-    };
+  mapAutostart = {
+    pkg,
+    desktopFile,
+  }: {
+    xdg.configFile."autostart/${desktopFile}".source = "${pkg}/share/applications/${desktopFile}";
+  };
 
-  autostarts = with pkgs; [
-    firefox
-    synology-drive-client
-    localsend
+  autostarts = [
+    {
+      pkg = pkgs.firefox;
+      desktopFile = "firefox.desktop";
+    }
+    {
+      pkg = pkgs.synology-drive-client;
+      desktopFile = "synology-drive.desktop";
+    }
+    {
+      pkg = pkgs.localsend;
+      desktopFile = "LocalSend.desktop";
+    }
   ];
 in
-  mkMerge (map registerAutostartPackage autostarts)
+  mkMerge (map mapAutostart autostarts)
