@@ -6,6 +6,8 @@ with pkgs; {
     in
     ls ./apps/cli;
   home.packages = [
+    age
+    sops
     bandwhich # shows real-time bandwidth usage per process
     peco
     powerline-fonts
