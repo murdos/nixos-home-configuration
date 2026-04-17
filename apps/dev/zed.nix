@@ -1,5 +1,6 @@
 { pkgs, ... }:
-with pkgs; {
+with pkgs;
+{
   programs.zed-editor = {
     enable = true;
     extensions = [

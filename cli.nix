@@ -1,5 +1,6 @@
 { pkgs, ... }:
-with pkgs; {
+with pkgs;
+{
   imports =
     let
       ls = dir: builtins.map (f: (dir + "/${f}")) (builtins.attrNames (builtins.readDir dir));
@@ -49,7 +50,8 @@ with pkgs; {
   };
 
   programs = {
-    atuin = { # improved shell history
+    atuin = {
+      # improved shell history
       enable = true;
       flags = [ "--disable-up-arrow" ];
       settings = {
@@ -58,7 +60,10 @@ with pkgs; {
     };
     bat = {
       enable = true;
-      extraPackages = with pkgs.bat-extras; [ batman batgrep ];
+      extraPackages = with pkgs.bat-extras; [
+        batman
+        batgrep
+      ];
     };
     btop.enable = true;
     direnv = {

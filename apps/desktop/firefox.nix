@@ -1,5 +1,6 @@
 { pkgs, ... }:
-with pkgs; {
+with pkgs;
+{
   programs.firefox = {
     enable = true;
     package = pkgs.firefox.override {
@@ -8,7 +9,10 @@ with pkgs; {
         pkgs.fx-cast-bridge
       ];
     };
-    languagePacks = [ "fr-FR" "en-US" ];
+    languagePacks = [
+      "fr-FR"
+      "en-US"
+    ];
     profiles."default" = {
       path = "haf6sy71.default";
       isDefault = true;

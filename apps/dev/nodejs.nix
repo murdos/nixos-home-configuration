@@ -1,5 +1,6 @@
 { pkgs, ... }:
-with pkgs; {
+with pkgs;
+{
   home.file.".npmrc".text = ''
     prefix = ''${HOME}/.npm
   '';

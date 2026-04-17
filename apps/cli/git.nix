@@ -18,12 +18,14 @@
       pull.rebase = "merges";
       protocol.rad.allow = "always";
     };
-    includes = [{
-      condition = "gitdir:~/git/enedis-*/";
-      contents = {
-        user.email = "aurelien-externe.mino@enedis.fr";
-      };
-    }];
+    includes = [
+      {
+        condition = "gitdir:~/git/enedis-*/";
+        contents = {
+          user.email = "aurelien-externe.mino@enedis.fr";
+        };
+      }
+    ];
   };
 
   programs.delta = {

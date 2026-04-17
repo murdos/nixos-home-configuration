@@ -1,5 +1,6 @@
 { pkgs, ... }:
-with pkgs; {
+with pkgs;
+{
   home.packages = [
     file-roller
     gnome-tweaks

@@ -1,5 +1,6 @@
 { pkgs, ... }:
-with pkgs; {
+with pkgs;
+{
   programs.ghostty = {
     enable = true;
     installBatSyntax = true;

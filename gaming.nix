@@ -1,5 +1,6 @@
 { pkgs, ... }:
-with pkgs; {
+with pkgs;
+{
   home.packages = [
     steam
     heroic # Heroic Games Launcher, an open-source GOG and Epic Games Store client

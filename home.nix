@@ -1,5 +1,6 @@
 { pkgs, ... }:
-with pkgs; {
+with pkgs;
+{
   imports = [
     ./cli.nix
     ./dev.nix

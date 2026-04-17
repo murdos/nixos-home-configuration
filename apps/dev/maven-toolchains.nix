@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
-with pkgs; {
+with pkgs;
+{
   home.file.".m2/toolchains.xml".text = ''
     <?xml version="1.0" encoding="UTF-8"?>
     <toolchains>

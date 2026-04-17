@@ -1,6 +1,10 @@
 { pkgs, ... }:
-with pkgs; {
+with pkgs;
+{
   home.file.".nix-channels".source = ./nix-channels;
+  home.packages = [
+    nixfmt-tree
+  ];
   nix = {
     gc = {
       automatic = true;

@@ -3,14 +3,16 @@
   pkgs,
   lib,
   ...
-}: let
+}:
+let
   inherit (lib.modules) mkMerge mkIf;
 
-  mapAutostart = {
-    pkg,
-    desktopFile,
-    condition ? true,
-  }:
+  mapAutostart =
+    {
+      pkg,
+      desktopFile,
+      condition ? true,
+    }:
     mkIf condition {
       xdg.configFile."autostart/${desktopFile}".source = "${pkg}/share/applications/${desktopFile}";
     };
@@ -33,4 +35,4 @@
     }
   ];
 in
-  mkMerge (map mapAutostart autostarts)
+mkMerge (map mapAutostart autostarts)
