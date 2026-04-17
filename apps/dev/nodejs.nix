@@ -9,7 +9,7 @@ with pkgs; {
   home.packages = [
     bun
     nodejs
-    nodePackages.pnpm
+    pnpm
     yarn
   ];
 }
