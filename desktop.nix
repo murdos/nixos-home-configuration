@@ -16,7 +16,7 @@ with pkgs; {
     chromaprint
     sound-juicer
     keepassxc
-    protonvpn-gui
+    proton-vpn
     pdftk # for manipulating pdfs
     xournalpp # for annotating pdfs
     handbrake # for converting videos
