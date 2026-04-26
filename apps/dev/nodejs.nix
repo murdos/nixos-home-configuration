@@ -1,9 +1,12 @@
 { pkgs, ... }:
 with pkgs;
 {
-  home.file.".npmrc".text = ''
-    prefix = ''${HOME}/.npm
-  '';
+  programs.npm = {
+    enable = true;
+    settings = {
+      prefix = "$HOME/.npm";
+    };
+  };
   home.sessionPath = [
     "$HOME/.npm/bin"
   ];
