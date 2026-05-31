@@ -45,7 +45,6 @@ with pkgs;
     du = "du -h";
     df = "df -h";
     man = "batman";
-    grep = "batgrep";
     gsudo = "sudo git -c \"include.path=$HOME/.config/git/config\"";
   };
 
