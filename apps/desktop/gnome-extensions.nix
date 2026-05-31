@@ -61,7 +61,7 @@ with pkgs;
       is-activated = true;
       panel-box = "center";
       locations = [
-        "{'name':'Villeurbanne','lat':45.77,'lon':4.88}"
+        ''{"name":"Villeurbanne","lat":45.77,"lon":4.88}''
       ];
       unit-preset = "metric";
     };
