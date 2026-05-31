@@ -9,7 +9,7 @@ with pkgs;
 
   programs = {
     k9s.enable = true;
-    vscode = {
+    vscodium = {
       enable = true;
       package = vscodium-fhs;
     };
