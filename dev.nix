@@ -17,7 +17,7 @@ with pkgs;
       enable = true;
       uri.rad.browser.enable = true;
     };
-    gemini-cli.enable = true;
+    antigravity-cli.enable = true;
     opencode.enable = true;
   };
 
