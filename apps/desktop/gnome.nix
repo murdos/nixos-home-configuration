@@ -59,6 +59,7 @@ with pkgs;
   };
 
   home.pointerCursor = {
+    enable = true;
     gtk.enable = true;
     name = "volantes_cursors";
     package = volantes-cursors;
