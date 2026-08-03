@@ -76,7 +76,6 @@ with pkgs;
     ripgrep.enable = true;
     jq.enable = true;
     tirith.enable = true; # intercepts suspicious URLs, ANSI injection, and pipe-to-shell attacks before they execute
-    fzf.enable = true;
     pay-respects.enable = true; # thefuck replacement written in Rust
     yazi.enable = true; # terminal file manager
     zoxide = {
