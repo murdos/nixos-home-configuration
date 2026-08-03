@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 with pkgs;
 {
   imports = [
@@ -10,7 +10,7 @@ with pkgs;
   ];
   home.stateVersion = "26.05";
   home.username = "amino";
-  home.homeDirectory = "/home/amino";
+  home.homeDirectory = "/home/${config.home.username}";
 
   home.packages = [
     # Nix stuff
