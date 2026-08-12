@@ -40,7 +40,6 @@ with pkgs;
       frequency = "daily";
     };
   };
-  services.syncthing.enable = true;
   systemd.user.startServices = "sd-switch";
   programs = {
     home-manager.enable = true;
