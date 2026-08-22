@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//nix/store/**)",
+      "Read(//home/amino/.config/home-manager/**)",
+      "Bash(nix show-config:*)",
+      "Bash(nix-store --verify --check-contents)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)"
+    ]
+  }
+}
