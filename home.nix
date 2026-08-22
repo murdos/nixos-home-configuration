@@ -7,6 +7,7 @@ with pkgs;
     ./desktop.nix
     ./gaming.nix
     ./nix.nix
+    <agenix/modules/age-home.nix>
   ];
   home.stateVersion = "26.05";
   home.username = "amino";
@@ -20,7 +21,10 @@ with pkgs;
     autoPatchelfHook
     any-nix-shell
     appimage-run
+    (pkgs.callPackage <agenix/pkgs/agenix.nix> { })
   ];
+  age.identityPaths = [ "${config.home.homeDirectory}/.age/personal-key.txt" ];
+
   services.gpg-agent = {
     enable = true;
     defaultCacheTtl = 1800;

@@ -46,6 +46,7 @@ with pkgs;
     df = "df -h";
     man = "batman";
     gsudo = "sudo git -c \"include.path=$HOME/.config/git/config\"";
+    agenix = "agenix -i $HOME/.age/personal-key.txt";
   };
 
   programs = {
