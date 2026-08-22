@@ -1,6 +1,9 @@
 repos:
-  - repo: https://github.com/NixOS/nixfmt
-    rev: v1.2.0
+  - repo: local
     hooks:
       - id: nixfmt
+        name: nixfmt
+        entry: nixfmt
+        language: system
+        files: \.nix$
         stages: [ pre-commit ]
