@@ -13,6 +13,7 @@ with pkgs;
       enable = true;
       package = vscodium-fhs;
     };
+    pomo.enable = true;
     radicle = {
       enable = true;
       uri.rad.browser.enable = true;
