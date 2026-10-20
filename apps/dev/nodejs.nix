@@ -7,13 +7,13 @@ with pkgs;
       prefix = "$HOME/.npm";
     };
   };
+  programs.pnpm.enable = true;
   home.sessionPath = [
     "$HOME/.npm/bin"
   ];
   home.packages = [
     bun
     nodejs
-    pnpm
     yarn
   ];
 }
