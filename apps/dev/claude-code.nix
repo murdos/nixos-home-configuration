@@ -15,6 +15,10 @@ with pkgs;
       tui = "fullscreen";
       autoUpdates = false;
       includeCoAuthoredBy = false;
+      # Don't add link "Claude-Session: https://claude.ai/code/..." to commits and PR
+      attribution = {
+        sessionUrl = false;
+      };
       autoCompactEnabled = true;
       enableAllProjectMcpServers = false;
       outputStyle = "Explanatory";
