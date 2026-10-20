@@ -5,6 +5,7 @@ with pkgs;
     file-roller
     gnome-tweaks
     dconf-editor
+    rufin
   ];
 
   dconf.settings = {
