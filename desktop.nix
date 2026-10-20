@@ -8,7 +8,6 @@ with pkgs;
     ls ./apps/desktop;
   home.packages = [
     chromium
-    spotify
     slack
     discord
     element-desktop
